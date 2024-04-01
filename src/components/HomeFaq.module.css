@@ -1,0 +1,22 @@
+.label::after {
+  content: "+";
+  margin-left: auto;
+  font-size: 24px;
+  font-weight: normal;
+  color: #4640e1;
+}
+.input[type="checkbox"] {
+  display: none;
+}
+.accordion .content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s, padding 0.5s;
+}
+.accordion .input[type="checkbox"]:checked + label + .content {
+  max-height: 400px;
+  padding-bottom: 20px;
+}
+.accordion .input[type="checkbox"]:checked + label::after {
+  content: "-";
+}
