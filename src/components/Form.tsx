@@ -16,7 +16,7 @@ const Form = () => {
   return (
     <form
       onSubmit={onSubmit}
-      className="max-w-xl bg-white rounded shadow-md px-10 py-8"
+      className="max-w-2xl bg-white rounded shadow-md px-10 py-8 mx-auto"
     >
       <h2 className="text-2xl font-bold montserrat">Get in touch with us!</h2>
       <p className="text-sm text-gray-600 ">

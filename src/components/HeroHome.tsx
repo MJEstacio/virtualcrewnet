@@ -4,8 +4,22 @@ import Form from "./Form";
 const HeroHome = () => {
   return (
     <section className="bg-gray-50">
-      <div className="max-w-7xl mx-auto grid py-10 min-h-screen grid-cols-1 lg:grid-cols-2 items-center gap-5">
-        <Form />
+      <div className="max-w-7xl mx-auto grid py-10 min-h-screen flex flex-col items-center gap-5">
+        <div className="relative z-10 max-w-2xl mx-auto mb-10 mt-36 ">
+          <video
+            autoPlay
+            muted
+            controls
+            className="rounded"
+          >
+            <source src="/heroVid.mp4" />
+          </video>
+          <div className="absolute -top-3 -left-3 w-full h-full border-2 -z-[2] border-black rounded"></div>
+          <div className="absolute top-3 left-3 w-full h-full border-2 -z-[2] border-black rounded"></div>
+        </div>
+        <div>
+          <Form />
+        </div>
         {/* <div className="">
           <div>
             <p className="text-xl uppercase">Lorem ipsum dolor sit amet.</p>
@@ -20,18 +34,6 @@ const HeroHome = () => {
             </div>
           </div>
         </div> */}
-        <div className="relative z-10 ">
-          <video
-            autoPlay
-            muted
-            controls
-            className="rounded"
-          >
-            <source src="/heroVid.mp4" />
-          </video>
-          <div className="absolute -top-3 -left-3 w-full h-full border-2 -z-[2] border-black rounded"></div>
-          <div className="absolute top-3 left-3 w-full h-full border-2 -z-[2] border-black rounded"></div>
-        </div>
       </div>
     </section>
   );

@@ -30,13 +30,20 @@ const navLinks = [
     name: "Contact",
     url: "/contact",
   },
+  {
+    id: 4,
+    name: "Login/SignUp",
+    url: "/login",
+  },
 ];
 export default function Navbar() {
   const navList = navLinks.map((link: navLinksProps) => (
     <li key={link.id}>
       <Link
         href={link.url}
-        className="uppercase font-semibold"
+        className={`uppercase font-semibold ${
+          link.id === 4 ? "px-4 py-2 bg-white text-black rounded" : ""
+        }`}
       >
         {link.name}
       </Link>
