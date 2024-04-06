@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CTA from "./CTA";
 
 const CTASection = () => {
   return (
@@ -12,12 +13,11 @@ const CTASection = () => {
         </h3>
         <hr className="w-1/2 mx-auto " />
         <div className="flex justify-center ">
-          <Link
-            href={"/contact"}
-            className="px-5 py-4 bg-white text-black duration-300  shadow-md  font-bold tracking-widest uppercase montserrat"
-          >
-            Contact Us
-          </Link>
+          <CTA
+            href="/contact"
+            name="Contact Us"
+            className=""
+          />
         </div>
       </div>
     </section>
