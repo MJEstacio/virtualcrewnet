@@ -18,7 +18,7 @@ const Form = () => {
       onSubmit={onSubmit}
       className="max-w-2xl bg-white rounded shadow-md px-10 py-8 mx-auto"
     >
-      <h2 className="text-2xl font-bold montserrat text-center">
+      <h2 className="text-xl font-bold montserrat text-center">
         Contact us today and Let’s build your vision together
       </h2>
 
