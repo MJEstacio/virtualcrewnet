@@ -5,7 +5,7 @@ const HeroHome = () => {
   return (
     <section className="bg-gray-50">
       <div className="max-w-7xl mx-auto grid py-10 min-h-screen flex flex-col items-center gap-5">
-        <div className="relative z-10 max-w-2xl mx-auto mb-10 mt-36 ">
+        <div className="relative z-10 max-w-4xl mx-auto mb-10 mt-36 ">
           <video
             autoPlay
             muted
