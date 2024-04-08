@@ -11,7 +11,7 @@ const WhoWeAre = () => {
         {/* <h3 className="text-3xl font-bold text-center montserrat mb-10">
           Unlock Your Full Potential with VirtualCrew.net!
         </h3> */}
-        <p className="leading-loose text-justify px-5 text-lg mb-5">
+        <p className="leading-loose text-left px-5 text-lg mb-5">
           Unlock Your Full Potential with VirtualCrew.net!
         </p>
 
