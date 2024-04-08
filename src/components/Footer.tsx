@@ -1,14 +1,9 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { AiFillFacebook, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
-import {
-  FaHome,
-  FaInstagram,
-  FaPhoneSquare,
-  FaTwitter,
-  FaYoutube,
-} from "react-icons/fa";
+import { AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
+import { FaHome, FaInstagram, FaPhoneSquare, FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
 
 const navLinks = [
@@ -47,7 +42,7 @@ const socialIcons = [
     url: "/",
   },
   {
-    icon: <FaTwitter size={25} />,
+    icon: <FaXTwitter size={25} />,
     url: "/",
   },
 ];

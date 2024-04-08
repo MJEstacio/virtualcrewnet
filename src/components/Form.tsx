@@ -89,7 +89,7 @@ const Form = () => {
       <div className="mt-5">
         <button
           type="submit"
-          className="w-full text-white bg-black  border-2 font-bold border-black py-3 tracking-widest uppercase"
+          className="w-full px-5 py-4 bg-black text-white duration-500  shadow-md  font-bold tracking-widest uppercase montserrat hover:text-black hover:bg-white border-2 border-black"
         >
           Send Message
         </button>

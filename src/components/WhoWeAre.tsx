@@ -6,7 +6,7 @@ const WhoWeAre = () => {
           Who We Are
         </h2>
         <p className="leading-loose text-justify px-5 text-lg">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
+          &nbsp; Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
           delectus blanditiis minus et repellat animi incidunt aliquam, eaque
           assumenda nulla eos consequuntur veritatis adipisci nisi, nam sequi
           aspernatur deleniti pariatur? Dicta, temporibus distinctio laboriosam

@@ -5,9 +5,9 @@ const HomeNews = () => {
     <section className="py-20">
       <div className="max-w-7xl mx-auto px-2">
         <div>
-          <h2 className="text-2xl font-bold ">Exciting News!</h2>
-          <div className="w-36 h-[2px] bg-black my-5"></div>
-          <p className="leading-8">
+          <h2 className="text-3xl font-bold text-center ">Exciting News!</h2>
+          <div className="w-36 h-[2px] bg-black my-5 mx-auto"></div>
+          <p className="leading-8 text-xl text-center">
             We&apos;re thrilled to announce that our subscription program and
             member area will be launching soon. Get ready to unlock exclusive
             benefits, connect with like-minded individuals, and access resources
@@ -15,14 +15,14 @@ const HomeNews = () => {
           </p>
         </div>
         <div className="mt-20">
-          <h2 className="text-2xl font-bold">Stay Tuned</h2>
-          <div className="w-36 h-[2px] bg-black my-5"></div>
-          <p className="leading-8">
+          <h2 className="text-3xl font-bold text-center">Stay Tuned</h2>
+          <div className="w-36 h-[2px] bg-black my-5 mx-auto"></div>
+          <p className="leading-8 text-xl mb-5 text-center">
             Keep an eye on your inbox for exciting updates and announcements. In
             the meantime, feel free to explore our website and discover the
             possibilities that await.
           </p>
-          <p className="leading-8">
+          <p className="leading-8 text-xl text-center">
             Thank you for choosing{" "}
             <Link
               href={"/"}
