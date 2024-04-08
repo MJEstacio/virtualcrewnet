@@ -4,7 +4,7 @@ import Form from "./Form";
 
 const HeroHome = () => {
   return (
-    <section className="bg-gray-50">
+    <section className="bg-gray-50 overflow-x-hidden">
       <div className="max-w-7xl mx-auto grid py-10 min-h-screen flex flex-col items-center gap-5">
         <div className="relative z-10 max-w-4xl mx-auto mb-10 mt-36 px-2 2xl:px-0 ">
           <video

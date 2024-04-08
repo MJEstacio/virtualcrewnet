@@ -9,7 +9,7 @@ const WhoWeAre = () => {
         </h2>
         <div className="w-36 h-[2px] bg-white my-8 mx-auto"></div>
         <h3 className="text-3xl font-bold text-center montserrat mb-10">
-          🌟 Unlock Your Full Potential with VirtualCrew.net! 🌟
+          Unlock Your Full Potential with VirtualCrew.net!
         </h3>
 
         <p className="leading-loose text-justify px-5 text-lg mb-5">
@@ -49,16 +49,12 @@ const WhoWeAre = () => {
           services. It&apos;s time to unleash your full potential and embrace a
           future filled with success and fulfillment.
         </p>
-        <div className=" px-8 ">
-          <p className="leading-loose text-center font-semibold  text-xl italic my-10  relative ">
-            <RiDoubleQuotesL className="text-4xl absolute -top-2 left-0" />
-            Ready to embark on your journey to greatness? Partner with
-            VirtualCrew.net today and witness the difference firsthand. Your
-            dreams deserve to be realized, and we&apos;re here to make it
-            happen!
-            <RiDoubleQuotesL className="text-4xl absolute -top-2 right-0 -scale-x-100" />
-          </p>
-        </div>
+
+        <p className="leading-loose text-justify px-5 text-lg mb-5">
+          Ready to embark on your journey to greatness? Partner with
+          VirtualCrew.net today and witness the difference firsthand. Your
+          dreams deserve to be realized, and we&apos;re here to make it happen!
+        </p>
       </div>
     </section>
   );

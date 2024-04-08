@@ -51,7 +51,7 @@ const Footer = () => {
   let year = new Date().getFullYear();
   return (
     <footer className="bg-black text-white pt-10">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <div className="max-w-7xl mx-auto flex items-center justify-between flex-col md:flex-row px-2">
         <div>
           <Link href={"/"}>
             <Image
@@ -59,12 +59,12 @@ const Footer = () => {
               width={500}
               height={500}
               alt="Logo"
-              className="max-w-60"
+              className="max-w-60 mb-5 sm:mb-0"
             />
           </Link>
         </div>
         <div>
-          <ul className="flex flex-col gap-2">
+          <ul className="flex md:flex-col gap-2 mb-10 md:mb-0 gap-5 md:gap-0">
             {navLinks.map(({ name, url }) => (
               <li key={name}>
                 <Link
@@ -77,7 +77,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 mb-5 md:mb-0">
           <div className="flex gap-2 items-center">
             <FaHome
               className="text-white"
@@ -103,8 +103,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto border-t-2 border-gray-200 py-5 flex justify-between px-2 ">
-        <p className="font-semibold">
+      <div className="max-w-7xl mx-auto border-t-2 border-gray-200 py-5 flex justify-between px-2 flex-col sm:flex-row ">
+        <p className="font-semibold text-center md:text-left mb-5 md:mb-0">
           © {year} VirtualCrew.Net All rights reserved
         </p>
 
