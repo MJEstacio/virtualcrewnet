@@ -8,9 +8,12 @@ const WhoWeAre = () => {
           What We Do
         </h2>
         <div className="w-36 h-[2px] bg-white my-8 mx-auto"></div>
-        <h3 className="text-3xl font-bold text-center montserrat mb-10">
+        {/* <h3 className="text-3xl font-bold text-center montserrat mb-10">
           Unlock Your Full Potential with VirtualCrew.net!
-        </h3>
+        </h3> */}
+        <p className="leading-loose text-justify px-5 text-lg mb-5">
+          Unlock Your Full Potential with VirtualCrew.net!
+        </p>
 
         <p className="leading-loose text-justify px-5 text-lg mb-5">
           Are you ready to transform your dreams into reality? Look no further
