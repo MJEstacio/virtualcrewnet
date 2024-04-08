@@ -16,10 +16,10 @@ const Form = () => {
   return (
     <form
       onSubmit={onSubmit}
-      className="max-w-2xl bg-white rounded shadow-md px-10 py-8 mx-auto"
+      className="max-w-3xl bg-white rounded shadow-md px-10 py-8 mx-auto"
     >
-      <h2 className="text-xl font-bold montserrat text-center">
-        Contact us today and Let’s build your vision together
+      <h2 className="text-2xl text-center font-bold montserrat text-center">
+        Contact us today and Let&apos;s build your vision together!
       </h2>
 
       <div className="flex flex-col my-5">

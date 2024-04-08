@@ -51,7 +51,7 @@ export default function Navbar() {
   ));
   return (
     <header className="shadow-md bg-black text-white fixed top-0 left-0 w-full z-50">
-      <nav className="max-w-7xl mx-auto flex justify-between py-3 items-center montserrat">
+      <nav className="max-w-7xl mx-auto flex justify-between py-3 items-center montserrat px-4 lg:px-0">
         <div>
           <Logo />
         </div>

@@ -1,4 +1,5 @@
-import CTA from "./CTA";
+"use client";
+
 import Form from "./Form";
 
 const HeroHome = () => {
@@ -7,13 +8,15 @@ const HeroHome = () => {
       <div className="max-w-7xl mx-auto grid py-10 min-h-screen flex flex-col items-center gap-5">
         <div className="relative z-10 max-w-4xl mx-auto mb-10 mt-36 px-2 2xl:px-0 ">
           <video
+            src="/heroVid.mp4"
             autoPlay
-            muted
             controls
-            className="rounded"
-          >
-            <source src="/heroVid.mp4" />
-          </video>
+            muted
+            preload="auto"
+            playsInline
+            className="rounded w-full"
+          />
+
           <div className="absolute -top-3 -left-3 w-full h-full border-2 -z-[2] border-black rounded"></div>
           <div className="absolute top-3 left-3 w-full h-full border-2 -z-[2] border-black rounded"></div>
         </div>
