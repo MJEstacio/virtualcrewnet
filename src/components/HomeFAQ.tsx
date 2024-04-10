@@ -1,4 +1,4 @@
-import { questions } from "@/api/data";
+import { questions } from "@/app/api/data";
 import styles from "./HomeFaq.module.css";
 
 const HomeFAQ = () => {
@@ -25,14 +25,10 @@ const HomeFAQ = () => {
               htmlFor="first"
               className="font-semibold text-brand-1 cursor-pointer flex p-5 bg-slate-50 text-base label"
             >
-              Lorem, ipsum dolor.
+              Do we have VA&apos;s who can provide 24/7 support?
             </label>
             <div className="content ">
-              <p className="text-brand-1/75 p-5 bg-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                harum dicta id possimus ratione. Quibusdam ea deleniti officia
-                quae ex quaerat nisi error quisquam dolorem?
-              </p>
+              <p className="text-brand-1/75 p-5 bg-white">Yes, we do.</p>
             </div>
           </li>
 
@@ -46,13 +42,18 @@ const HomeFAQ = () => {
               htmlFor="second"
               className="font-semibold text-brand-1 cursor-pointer flex p-5 bg-slate-50 text-base label"
             >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              How Do We Communicate?
             </label>
             <div className="content ">
               <p className="text-brand-1/75 p-5 bg-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                harum dicta id possimus ratione. Quibusdam ea deleniti officia
-                quae ex quaerat nisi error quisquam dolorem?
+                We have a state of the art Project Management tool that you will
+                access when you start with us. The portal will allow you to
+                assign tasks, start discussions, upload files, and fully
+                integrates with your email for quick communication. We can help
+                you determine a cost effective way to gain your valuable time
+                back so you can spend it on what&apos;s important to you whether
+                that&apos;s refocusing on growing your business, or spending
+                more time with your family.
               </p>
             </div>
           </li>
@@ -67,13 +68,12 @@ const HomeFAQ = () => {
               htmlFor="third"
               className="font-semibold text-brand-1 cursor-pointer flex p-5 bg-slate-50 text-base label"
             >
-              Lorem ipsum dolor sit amet.
+              What are your payment options?
             </label>
             <div className="content ">
               <p className="text-brand-1/75 p-5 bg-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                harum dicta id possimus ratione. Quibusdam ea deleniti officia
-                quae ex quaerat nisi error quisquam dolorem?
+                We accept bank or wire transfer to our bank account and fund
+                transfer through PayPal.
               </p>
             </div>
           </li>
@@ -88,13 +88,13 @@ const HomeFAQ = () => {
               htmlFor="fourth"
               className="font-semibold text-brand-1 cursor-pointer flex p-5 bg-slate-50 text-base label"
             >
-              Lorem ipsum dolor sit amet consectetur.
+              Can I select the level of virtual assistant I want to work with?
             </label>
             <div className="content ">
               <p className="text-brand-1/75 p-5 bg-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                harum dicta id possimus ratione. Quibusdam ea deleniti officia
-                quae ex quaerat nisi error quisquam dolorem?
+                Yes, VirtualCrew.Net offers a variety of solutions for a wide
+                range of expertise and skill levels, and you can select the type
+                of VA that best matches your needs and budget range.
               </p>
             </div>
           </li>
@@ -109,13 +109,12 @@ const HomeFAQ = () => {
               htmlFor="fifth"
               className="font-semibold text-brand-1 cursor-pointer flex p-5 bg-slate-50 text-base label"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum.
+              Can I add or remove virtual assistant services as my needs change?
             </label>
             <div className="content ">
               <p className="text-brand-1/75 p-5 bg-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                harum dicta id possimus ratione. Quibusdam ea deleniti officia
-                quae ex quaerat nisi error quisquam dolorem?
+                Yes. Our virtual assistant services can be scaled up or down as
+                necessary to match your specific needs.
               </p>
             </div>
           </li>

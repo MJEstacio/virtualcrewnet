@@ -1,23 +1,35 @@
 "use client";
-import { FormEvent } from "react";
 
-const Form = () => {
-  async function onSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const formData = new FormData(event?.currentTarget);
-    const response = await fetch("/api/submit", {
-      method: "POST",
-      body: formData,
-    });
-    const data = await response.json();
-    console.log(data);
-  }
+import { FormEvent, useState } from "react";
+import toast from "react-hot-toast/headless";
 
+const sendEmail = async (e: FormEvent) => {
+  e.preventDefault();
+  // try {
+  //   const res = await fetch('api/send', {
+  //     body:JSON.stringify({
+  //       name, email,phone,subject,message
+  //     }),
+  //     headers:{
+  //       'content-type':'application/json'
+  //     },
+  //   })
+  // }
+
+  // if (response.status === 200) {
+  //   setData({
+  //     name: "",
+  //     email: "",
+  //     phone: "",
+  //     message: "",
+  //   });
+  //   toast.success("Your message was sent successfully!");
+  // }
+};
+
+const Form2 = () => {
   return (
-    <form
-      onSubmit={onSubmit}
-      className="max-w-3xl bg-white rounded shadow-md px-10 py-8 mx-auto"
-    >
+    <form className="max-w-3xl bg-white rounded shadow-md px-10 py-8 mx-auto">
       <h2 className="text-2xl text-center font-bold montserrat text-center">
         Contact us today and Let&apos;s build your vision together!
       </h2>
@@ -70,6 +82,21 @@ const Form = () => {
           />
         </div>
       </div>
+      <div className="flex flex-col my-5">
+        <label
+          htmlFor="subject"
+          className="text-lg font-semibold mb-2"
+        >
+          Subject
+        </label>
+        <input
+          type="text"
+          id="subject"
+          placeholder="Subject"
+          className="border-b border-gray-400 outline-none"
+          required
+        />
+      </div>
       <div>
         <label
           htmlFor="message"
@@ -88,6 +115,7 @@ const Form = () => {
       </div>
       <div className="mt-5">
         <button
+          onClick={sendEmail}
           type="submit"
           className="w-full px-5 py-4 bg-black text-white duration-500  shadow-md  font-bold tracking-widest uppercase montserrat hover:text-black hover:bg-white border-2 border-black"
         >
@@ -98,4 +126,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default Form2;

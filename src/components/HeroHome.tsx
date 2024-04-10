@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Form from "./Form";
+
+import Form2 from "./Form";
 const HeroHome = () => {
   const videoRef = useRef(null);
   const [muted, setMuted] = useState(false);
@@ -38,7 +39,7 @@ const HeroHome = () => {
           <div className="absolute top-3 left-3 w-full h-full border-2 -z-[2] border-black rounded"></div>
         </div>
         <div>
-          <Form />
+          <Form2 />
         </div>
         {/* <div className="">
           <div>
