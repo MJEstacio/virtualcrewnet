@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Form from "./Form";
 const HeroHome = () => {
   const videoRef = useRef(null);
-
+  const [muted, setMuted] = useState(false);
   useEffect(() => {
     const video: any = videoRef.current;
     const handleCanPlay = () => {
@@ -28,6 +28,7 @@ const HeroHome = () => {
             ref={videoRef}
             className="rounded w-full"
             controls
+            autoPlay
             muted
           >
             <source src="/heroVid.mp4" />
