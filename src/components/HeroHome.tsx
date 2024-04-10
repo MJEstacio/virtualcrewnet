@@ -13,7 +13,7 @@ const HeroHome = () => {
       });
     };
     if (video) {
-      video.muted = false;
+      video.muted = true;
       video.addEventListener("canplay", handleCanPlay);
       return () => {
         video.removeEventListener("canplay", handleCanPlay);
