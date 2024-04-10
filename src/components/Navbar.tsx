@@ -4,6 +4,7 @@ import Link from "next/link";
 import Logo from "./Logo";
 import { HiMenu } from "react-icons/hi";
 import { useState } from "react";
+import { truncateSync } from "fs";
 
 interface navLinksProps {
   id: number;
