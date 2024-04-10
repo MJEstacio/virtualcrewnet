@@ -28,6 +28,7 @@ const HeroHome = () => {
             ref={videoRef}
             className="rounded w-full"
             controls
+            muted
           >
             <source src="/heroVid.mp4" />
           </video>
