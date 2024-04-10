@@ -39,7 +39,7 @@ const navLinks = [
   },
 ];
 export default function Navbar() {
-  const [showNav, setShowNav] = useState(true);
+  const [showNav, setShowNav] = useState(false);
   const navList = navLinks.map((link: navLinksProps) => (
     <li key={link.id}>
       <Link
