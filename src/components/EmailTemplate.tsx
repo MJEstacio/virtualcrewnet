@@ -1,11 +1,21 @@
-export const EmailTemplate = ({ name, email, number, message }: any) => (
+interface EmailTemplateProps {
+  name: string;
+  email: string;
+  number: string;
+  message: string;
+}
+
+export const EmailTemplate = ({
+  name,
+  email,
+  number,
+  message,
+}: EmailTemplateProps) => (
   <div>
-    <p>Hello Islay</p>
-    <p>
-      {name} has submitted the contact form on your website. Their email is{" "}
-      {email}.
-    </p>
+    <h3>Name: {name}</h3>
+    <h2>Email: {email}</h2>
     <p>Contact Number: {number}</p>
-    <p>Message: {message}</p>
+    <p>Message:</p>
+    <p>{message}</p>
   </div>
 );

@@ -3,10 +3,9 @@ import HeroHome from "@/components/HeroHome";
 import HomeFAQ from "@/components/HomeFAQ";
 import HomeNews from "@/components/HomeNews";
 import Services from "@/components/Services";
-import ToastBtn from "@/components/Toast";
+
 import WhoWeAre from "@/components/WhoWeAre";
-import { Montserrat } from "next/font/google";
-import toast, { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 
 export default function Home() {
   return (

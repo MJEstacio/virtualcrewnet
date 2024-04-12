@@ -3,6 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 
 import Form2 from "./Form";
+import ContactForm from "./ContactForm";
+import { Toaster } from "react-hot-toast";
 const HeroHome = () => {
   const videoRef = useRef(null);
   const [muted, setMuted] = useState(true);
@@ -23,6 +25,9 @@ const HeroHome = () => {
   }, []);
   return (
     <section className="bg-gray-50 overflow-x-hidden">
+      <div>
+        <Toaster position="top-center" />
+      </div>
       <div className="max-w-7xl mx-auto grid py-10 min-h-screen flex flex-col items-center gap-5">
         <div className="relative z-10 max-w-4xl mx-auto mb-10 mt-36 px-2 2xl:px-0 ">
           <video
@@ -47,7 +52,7 @@ const HeroHome = () => {
           </button>
         </div>
         <div>
-          <Form2 />
+          <ContactForm />
         </div>
         {/* <div className="">
           <div>
