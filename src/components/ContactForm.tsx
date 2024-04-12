@@ -100,6 +100,7 @@ const ContactForm = () => {
             placeholder="Name"
             className="border-b border-gray-400 outline-none"
             value={name}
+            required
             onChange={(e) => setName(e.target.value)}
           />
         </div>
@@ -119,6 +120,7 @@ const ContactForm = () => {
               placeholder="Email"
               className="border-b border-gray-400 outline-none "
               value={email}
+              required
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
@@ -136,6 +138,7 @@ const ContactForm = () => {
               className="border-b border-gray-400 outline-none"
               value={number}
               name="number"
+              required
               onChange={(e) => setNumber(e.target.value)}
             />
           </div>
@@ -155,6 +158,7 @@ const ContactForm = () => {
             rows={5}
             className="w-full border px-2 py-1 outline-none mt-3 resize-none"
             value={message}
+            required
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
         </div>
