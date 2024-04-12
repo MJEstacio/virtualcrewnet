@@ -9,7 +9,7 @@ export async function POST(request: Request) {
   const { name, email, number, message } = await request.json();
   await resend.emails.send({
     from: "info@virtualcrew.net",
-    to: "ijavier78@icloud.com",
+    to: "mjestacioiii@gmail.com",
     subject: "Message from VirtualCrew.net",
     react: EmailTemplate({ name, email, number, message }),
   });
