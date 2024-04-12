@@ -27,7 +27,7 @@ const sendEmail = async (e: FormEvent) => {
   // }
 };
 
-const Form2 = () => {
+const Form = () => {
   return (
     <form className="max-w-3xl bg-white rounded shadow-md px-10 py-8 mx-auto">
       <h2 className="text-2xl text-center font-bold montserrat text-center">
@@ -126,4 +126,4 @@ const Form2 = () => {
   );
 };
 
-export default Form2;
+export default Form;

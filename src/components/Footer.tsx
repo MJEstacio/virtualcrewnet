@@ -60,11 +60,12 @@ const Footer = () => {
               height={500}
               alt="Logo"
               className="max-w-60 mb-5 sm:mb-0"
+              priority
             />
           </Link>
         </div>
         <div>
-          <ul className="flex md:flex-col gap-2 mb-10 md:mb-0 gap-5 md:gap-0">
+          <ul className="flex md:flex-col mb-10 md:mb-0 gap-5 md:gap-2">
             {navLinks.map(({ name, url }) => (
               <li key={name}>
                 <Link

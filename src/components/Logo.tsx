@@ -10,6 +10,7 @@ const Logo = () => {
         height={500}
         className="w-20"
         alt="Logo"
+        priority
       />
     </Link>
   );
