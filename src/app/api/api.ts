@@ -1,7 +1,7 @@
 import { EmailTemplate } from "@/components/EmailTemplate";
 import { Resend } from "resend";
 
-const resend = new Resend("re_GF1FqHiJ_PFXEgLTWtCQL6BqMXSCSt4Kp");
+const resend = new Resend("re_GNKkfzPG_4gM9aceK4B7aX53WDzcgBXEt");
 
 export const sendEmail = async (
   formData: {

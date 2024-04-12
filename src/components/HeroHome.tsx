@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import Form2 from "./Form";
 const HeroHome = () => {
   const videoRef = useRef(null);
-  const [muted, setMuted] = useState(false);
+  const [muted, setMuted] = useState(true);
   useEffect(() => {
     const video: any = videoRef.current;
     const handleCanPlay = () => {
@@ -30,13 +30,21 @@ const HeroHome = () => {
             className="rounded w-full"
             controls
             autoPlay
-            muted
+            muted={muted}
           >
             <source src="/heroVid.mp4" />
           </video>
 
           <div className="absolute -top-3 -left-3 w-full h-full border-2 -z-[2] border-black rounded"></div>
           <div className="absolute top-3 left-3 w-full h-full border-2 -z-[2] border-black rounded"></div>
+        </div>
+        <div className="flex justify-center max-w-4xl mx-auto">
+          <button
+            onClick={() => setMuted(!muted)}
+            className="py-5 bg-black text-white w-full px-10 font-semibold uppercase"
+          >
+            {muted ? "Click to enable sound" : "Click to mute sound"}
+          </button>
         </div>
         <div>
           <Form2 />

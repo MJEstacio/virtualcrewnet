@@ -15,9 +15,6 @@ export default function Home() {
         <Toaster />
       </div>
       <HeroHome />
-      <div>
-        <ToastBtn />
-      </div>
       <HomeNews />
       <WhoWeAre />
       <Services />
