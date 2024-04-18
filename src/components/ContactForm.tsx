@@ -4,6 +4,14 @@ import React, { useState } from "react";
 import { Toaster } from "react-hot-toast";
 import toast from "react-hot-toast/headless";
 
+const notifyFail = () => {
+  toast.error("Please fill up the form", { position: "top-center" });
+};
+const notifySuccess = () => {
+  toast.success("Thank you for sending us a message!", {
+    position: "top-center",
+  });
+};
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -15,34 +23,12 @@ const ContactForm = () => {
     setLoading(true);
     e.preventDefault();
 
-    if (name == "" && email == "" && number == "" && message == "") {
+    if (name === "" && email === "" && number === "" && message === "") {
       setLoading(false);
-      toast.error("Please fill up the required information"),
-        {
-          position: "top-center",
-        };
+      toast.error("Please fill up the required information");
       return false;
     }
 
-    // sendEmail(
-    //   { name, email, number, message },
-    //   (data) => {
-    //     setLoading(false);
-    //     if (data) {
-    //       toast.success("Thank you for sending a message! ");
-    //       setName("");
-    //       setEmail("");
-    //       setNumber("");
-    //       setMessage("");
-    //     } else {
-    //       toast.error("Please Try again! :(");
-    //     }
-    //   },
-    //   () => {
-    //     setLoading(false);
-    //     toast.error("Ooops! unfortunately some error has occurred.");
-    //   },
-    // );
     await fetch("/api/email", {
       method: "POST",
       body: JSON.stringify({ name, email, number, message }),
@@ -51,17 +37,13 @@ const ContactForm = () => {
       .then((data) => {
         setLoading(false);
         if (data) {
-          toast.success("Thank you for sending a message! ", {
-            position: "top-center",
-          });
           setName("");
           setEmail("");
           setNumber("");
           setMessage("");
+          notifySuccess();
         } else {
-          toast.error("Please Try again! :(", {
-            position: "top-center",
-          });
+          notifyFail();
         }
       })
       .catch((err) => {
@@ -75,9 +57,6 @@ const ContactForm = () => {
   };
   return (
     <>
-      <div>
-        <Toaster position="top-center" />
-      </div>
       <form
         className="max-w-3xl bg-white rounded shadow-md px-10 py-8 mx-auto text-black"
         onSubmit={handleSubmit}
@@ -126,7 +105,7 @@ const ContactForm = () => {
           </div>
           <div className="flex flex-col">
             <label
-              htmlFor="contactNumber"
+              htmlFor="number"
               className="text-lg font-semibold mb-2"
             >
               Contact Number
@@ -186,3 +165,23 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+
+// sendEmail(
+//   { name, email, number, message },
+//   (data) => {
+//     setLoading(false);
+//     if (data) {
+//       toast.success("Thank you for sending a message! ");
+//       setName("");
+//       setEmail("");
+//       setNumber("");
+//       setMessage("");
+//     } else {
+//       toast.error("Please Try again! :(");
+//     }
+//   },
+//   () => {
+//     setLoading(false);
+//     toast.error("Ooops! unfortunately some error has occurred.");
+//   },
+// );

@@ -10,9 +10,6 @@ import { Toaster } from "react-hot-toast";
 export default function Home() {
   return (
     <main>
-      <div>
-        <Toaster />
-      </div>
       <HeroHome />
       <HomeNews />
       <WhoWeAre />

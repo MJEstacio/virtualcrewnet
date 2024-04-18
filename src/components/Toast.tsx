@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 
 const ToastBtn = () => {
   const notify = () =>
-    toast.success("Here is your toast", {
+    toast.success("Thank you for sending us a message!", {
       position: "top-center",
     });
   return (

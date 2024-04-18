@@ -32,12 +32,12 @@ export default function RootLayout({
     <html lang="en">
       <body className="poppins">
         <Navbar />
-        {children}
-        <Footer />
         <Toaster
-          position="bottom-right"
+          position="top-center"
           toastOptions={{ duration: 3000 }}
         />
+        {children}
+        <Footer />
       </body>
     </html>
   );

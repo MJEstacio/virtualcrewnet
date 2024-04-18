@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import Form2 from "./Form";
 import ContactForm from "./ContactForm";
 import { Toaster } from "react-hot-toast";
+import ToastBtn from "./Toast";
 const HeroHome = () => {
   const videoRef = useRef(null);
   const [muted, setMuted] = useState(true);
@@ -53,6 +54,7 @@ const HeroHome = () => {
         </div>
         <div>
           <ContactForm />
+          <ToastBtn />
         </div>
         {/* <div className="">
           <div>
