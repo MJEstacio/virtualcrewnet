@@ -54,7 +54,6 @@ const HeroHome = () => {
         </div>
         <div>
           <ContactForm />
-          <ToastBtn />
         </div>
         {/* <div className="">
           <div>
