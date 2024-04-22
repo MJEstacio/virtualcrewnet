@@ -108,7 +108,7 @@ const ContactForm = () => {
           </div>
           <div className="flex flex-col">
             <label
-              htmlFor="number"
+              htmlFor="tel"
               className="text-lg font-semibold mb-2"
             >
               Contact Number
