@@ -1,6 +1,8 @@
 import ContactForm from "@/components/ContactForm";
-import { Toaster } from "react-hot-toast";
-
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Contact - VirtualCrew",
+};
 const ContactPage = () => {
   return (
     <main className="text-white">
