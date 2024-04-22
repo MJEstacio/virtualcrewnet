@@ -9,7 +9,7 @@ export default function AboutWhoWeAre() {
         </h2>
         <div className="w-36 h-[2px] bg-white my-5 mx-auto"></div>
         <div className="mt-10">
-          <p className="leading-7 text-lg text-center">
+          <p className="leading-8 text-lg text-center">
             At <span className="font-semibold">VirtualCrew</span>, we envision a
             world where businesses of all sizes can thrive without being bogged
             down by administrative tasks. Our mission is to empower
