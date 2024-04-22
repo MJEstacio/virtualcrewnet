@@ -8,7 +8,7 @@ const Column3 = ({ order }: OrderProps) => {
   return (
     <section className="bg-white -mt-11">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 border-y-2 border-slate-300 p-2 mb-10 ">
-        <div className={`my-auto px-5 xl:px-0 lg:order-${order}`}>
+        <div className={`my-auto px-5 xl:px-0 lg:order-${order} `}>
           <h2 className="text-3xl font-semibold my-5 montserrat">Our Vision</h2>
 
           <p className="leading-7 mb-2">
