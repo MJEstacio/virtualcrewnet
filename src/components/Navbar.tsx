@@ -23,11 +23,7 @@ const navLinks = [
     name: "About Us",
     url: "/about",
   },
-  {
-    id: 2,
-    name: "Blogs",
-    url: "/blogs",
-  },
+
   {
     id: 3,
     name: "Contact",
@@ -35,7 +31,7 @@ const navLinks = [
   },
   {
     id: 4,
-    name: "Login/SignUp",
+    name: "Login | SignUp",
     url: "/login",
   },
 ];

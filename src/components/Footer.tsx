@@ -15,10 +15,7 @@ const navLinks = [
     name: "About Us",
     url: "/about",
   },
-  {
-    name: "Blogs",
-    url: "/blogs",
-  },
+
   {
     name: "Contact",
     url: "/contact",
