@@ -9,7 +9,7 @@ export async function POST(request: Request) {
   const { name, email, number, message } = await request.json();
   await resend.emails.send({
     from: "info@virtualcrew.net",
-    to: "mjestacioiii@gmail.com",
+    to: "ijavier78@icloud.com",
     subject: "Message from VirtualCrew.net",
     react: EmailTemplate({ name, email, number, message }),
   });
@@ -19,6 +19,7 @@ export async function POST(request: Request) {
   });
 }
 
+// ijavier78@icloud.com
 // export default async (req: NextApiRequest, res: NextApiResponse) => {
 //   const { data, error } = await resend.emails.send({
 //     from: "Acme <onboarding@resend.dev>",

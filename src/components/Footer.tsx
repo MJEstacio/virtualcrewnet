@@ -27,11 +27,11 @@ const navLinks = [
 const socialIcons = [
   {
     icon: <AiFillFacebook size={25} />,
-    url: "https://www.facebook.com/shempot1601",
+    url: "/",
   },
   {
     icon: <AiFillLinkedin size={25} />,
-    url: "https://www.linkedin.com/in/markjosephestacio/",
+    url: "/",
   },
   {
     icon: <FaYoutube size={25} />,

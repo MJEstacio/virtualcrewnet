@@ -1,5 +1,6 @@
 "use client";
 
+import { redirect } from "next/navigation";
 import React, { useState } from "react";
 import { Toaster } from "react-hot-toast";
 import toast from "react-hot-toast/headless";
@@ -42,6 +43,7 @@ const ContactForm = () => {
           setNumber("");
           setMessage("");
           notifySuccess();
+          redirect("/contact");
         } else {
           notifyFail();
         }
@@ -53,10 +55,11 @@ const ContactForm = () => {
         });
       });
 
-    return false;
+    return true;
   };
   return (
     <>
+      <Toaster />
       <form
         className="max-w-3xl bg-white rounded shadow-md px-10 py-8 mx-auto text-black"
         onSubmit={handleSubmit}
