@@ -14,12 +14,10 @@ const Column3 = ({ order }: OrderProps) => {
           <p className="leading-7 mb-2">
             In today&apos;s fast-paced digital landscape, we understand the
             challenges of juggling multiple responsibilities while striving for
-            excellence.
+            excellence. That&apos;s why we&apos;ve made it our goal to
+            revolutionize the way you work.
           </p>
-          <p className="leading-7 mb-2">
-            That&apos;s why we&apos;ve made it our goal to revolutionize the way
-            you work.
-          </p>
+
           <p className="leading-7 mb-2">
             Our vision is simple yet powerful: to be the cornerstone of your
             success, seamlessly integrating into your operations to amplify
