@@ -2,6 +2,7 @@ import CTASection from "@/components/CTASection";
 import HeroHome from "@/components/HeroHome";
 import HomeFAQ from "@/components/HomeFAQ";
 import HomeNews from "@/components/HomeNews";
+import PricingSection from "@/components/PricingSection";
 import Services from "@/components/Services";
 
 import WhoWeAre from "@/components/WhoWeAre";
@@ -13,6 +14,7 @@ export default function Home() {
       <HeroHome />
       <HomeNews />
       <WhoWeAre />
+      {/* <PricingSection /> */}
       <Services />
       <CTASection />
       <HomeFAQ />
