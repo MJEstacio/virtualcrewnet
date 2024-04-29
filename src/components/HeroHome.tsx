@@ -47,7 +47,7 @@ const HeroHome = () => {
         <div className="flex justify-center max-w-4xl mx-auto">
           <button
             onClick={() => setMuted(!muted)}
-            className="py-5 bg-black text-white w-full px-10 font-semibold uppercase"
+            className="py-5 bg-black text-white w-full px-10 font-semibold uppercase hover:scale-105 duration-500 hover:text-black hover:bg-white hover:ring-black ring-2"
           >
             {muted ? "Click to enable sound" : "Click to mute sound"}
           </button>
