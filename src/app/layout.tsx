@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Roboto, Poppins, Montserrat } from "next/font/google";
+
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 // const montserrat = Montserrat({
 //   subsets: ["latin"],
 //   variable: "--font-montserrat",
@@ -38,6 +39,7 @@ export default function RootLayout({
         />
         {children}
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   );
