@@ -1,6 +1,6 @@
 import { RiDoubleQuotesL } from "react-icons/ri";
 
-const WhoWeAre = () => {
+const WhatWeDo = () => {
   return (
     <section className="bg-black text-white py-20">
       <div className="max-w-7xl mx-auto">
@@ -63,4 +63,4 @@ const WhoWeAre = () => {
   );
 };
 
-export default WhoWeAre;
+export default WhatWeDo;
