@@ -5,16 +5,15 @@ import HomeNews from "@/components/HomeNews";
 import PricingSection from "@/components/PricingSection";
 import Services from "@/components/Services";
 
-import WhoWeAre from "@/components/WhoWeAre";
-import { Toaster } from "react-hot-toast";
+import WhatWeDo from "@/components/WhatWeDo";
 
 export default function Home() {
   return (
     <main>
       <HeroHome />
       <HomeNews />
-      <WhoWeAre />
-      {/* <PricingSection /> */}
+      <WhatWeDo />
+      <PricingSection />
       <Services />
       <CTASection />
       <HomeFAQ />

@@ -3,7 +3,7 @@ import Link from "next/link";
 const HomeNews = () => {
   return (
     <section className="py-20">
-      <div className="max-w-7xl mx-auto px-2">
+      <div className="max-w-7xl mx-auto px-5">
         <div>
           <h2 className="text-3xl font-bold text-center ">Exciting News!</h2>
           <div className="w-36 h-[2px] bg-black my-5 mx-auto"></div>
