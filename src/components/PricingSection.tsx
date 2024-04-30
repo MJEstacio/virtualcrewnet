@@ -70,6 +70,7 @@ const tier = [
     features: [
       "160 hours/month of virtual assistance",
       "Exclusively buy unlimited hours at $5 per hour after the initial 160 hours",
+      "All features included in the Basic subscription",
     ],
   },
 ];
@@ -142,7 +143,7 @@ export default function PricingSection() {
                         ${discountPrice} OFF
                       </span>
                     </div>
-                    <button className="border border-white border-2 py-3 px-12 font-semibold mb-5">
+                    <button className="border border-white border-2 py-3 px-12 font-semibold mb-5 hover:text-black hover:bg-white hover:border-black duration-500">
                       Buy Now
                     </button>
                   </div>
@@ -189,18 +190,6 @@ export default function PricingSection() {
                             {feature}
                           </li>
                         ))}
-                        {/* <li className="flex gap-2 items-center">
-                        <FaCheckCircle className="text-green-500" /> Feature
-                      </li>
-                      <li className="flex gap-2 items-center">
-                        <FaCheckCircle className="text-green-500" /> Feature
-                      </li>
-                      <li className="flex gap-2 items-center">
-                        <FaCheckCircle className="text-green-500" /> Feature
-                      </li>
-                      <li className="flex gap-2 items-center">
-                        <FaCheckCircle className="text-green-500" /> Feature
-                      </li> */}
                       </ul>
                     </div>
                     <div className="py-5 bg-black text-white text-center">
@@ -208,7 +197,7 @@ export default function PricingSection() {
                         <span className="font-semibold text-2xl">${price}</span>
                         /month
                       </p>
-                      <button className="border border-white border-2 py-3 px-12 font-semibold mb-5">
+                      <button className="border border-white border-2 py-3 px-12 font-semibold mb-5 hover:text-black hover:bg-white hover:border-black duration-500">
                         Buy Now
                       </button>
                     </div>
