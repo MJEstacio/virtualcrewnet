@@ -36,7 +36,7 @@ const Column2 = ({ order }: OrderProps) => {
           width={500}
           height={500}
           alt="Our Mission Image"
-          className="mx-auto"
+          className="mx-auto w-auto"
         />
       </div>
     </section>

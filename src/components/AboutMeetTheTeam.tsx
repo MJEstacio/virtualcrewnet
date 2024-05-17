@@ -34,7 +34,7 @@ const teams = [
   {
     name: "Simon",
     role: "Assistant Director of Web Development",
-    img: "",
+    img: "/profile_placeholder.jpg",
   },
 
   {
