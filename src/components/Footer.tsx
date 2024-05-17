@@ -24,7 +24,7 @@ const navLinks = [
 const socialIcons = [
   {
     icon: <AiFillFacebook size={25} />,
-    url: "/",
+    url: "https://www.facebook.com/profile.php?id=61559641023868",
   },
   {
     icon: <AiFillLinkedin size={25} />,
