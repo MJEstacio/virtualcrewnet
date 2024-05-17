@@ -8,17 +8,19 @@ const Column3 = ({ order }: OrderProps) => {
   return (
     <section className="bg-white -mt-11">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 border-y-2 border-slate-300 p-2 mb-10 ">
-        <div className={`my-auto px-5 xl:px-0 order-2 lg:order-1 `}>
-          <h2 className="text-3xl font-semibold my-5 montserrat">Our Vision</h2>
+        <div className={`my-auto px-5 xl:px-0 -order-1 lg:order-1 `}>
+          <h2 className="text-3xl font-semibold my-5 montserrat lg:text-right">
+            Our Vision
+          </h2>
 
-          <p className="leading-7 mb-2">
+          <p className="leading-7 mb-2 lg:text-right">
             In today&apos;s fast-paced digital landscape, we understand the
             challenges of juggling multiple responsibilities while striving for
             excellence. That&apos;s why we&apos;ve made it our goal to
             revolutionize the way you work.
           </p>
 
-          <p className="leading-7 mb-2">
+          <p className="leading-7 mb-2 lg:text-right">
             Our vision is simple yet powerful: to be the cornerstone of your
             success, seamlessly integrating into your operations to amplify
             productivity and drive growth.

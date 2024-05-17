@@ -7,6 +7,7 @@ interface tierProps {
   price: number;
   discount: boolean;
   discountPrice: number;
+  stripeUrl: string;
   features: string[];
 }
 
@@ -18,9 +19,11 @@ const tier = [
     price: 400,
     discount: false,
     discountPrice: 0,
+    stripeUrl: "https://buy.stripe.com/test_6oEbKC5Gh5zd5kQ8wx",
     features: [
-      "40 hours/month",
+      "40 hours of VirtualCrew assistance",
       "Once a week video meetings with our VirtualCrew team",
+      "2 voice calls and 1 video meeting with a staff member",
     ],
   },
   {
@@ -30,10 +33,11 @@ const tier = [
     price: 350,
     discount: true,
     discountPrice: 50,
+    stripeUrl: "https://buy.stripe.com/test_7sI4ia8Ste5J6oU000",
     features: [
-      "40 hours/month of virtual assistance",
+      "40 hours/month of VirtualCrew assistance",
       "24/7 Customer support",
-      "Once a week video meetings with our VirtualCrew team",
+      "2 voice calls and 1 video meeting with a staff member",
     ],
   },
   {
@@ -43,9 +47,11 @@ const tier = [
     price: 650,
     discount: true,
     discountPrice: 150,
+    stripeUrl: "https://buy.stripe.com/test_6oE3e62u5f9N14A5km",
     features: [
-      "80 hours/month of virtual assistance",
-      "All features included in the Basic subscription",
+      "80 hours/month of VirtualCrew assistance",
+      "24/7 Customer support",
+      "4 voice calls and 2 video meeting with a staff member",
     ],
   },
   {
@@ -55,9 +61,11 @@ const tier = [
     price: 950,
     discount: true,
     discountPrice: 250,
+    stripeUrl: "https://buy.stripe.com/test_7sI2a28St7Hl28E7sv",
     features: [
-      "120 hours/month of virtual assistance",
-      "All features included in the Basic subscription",
+      "120 hours/month of VirtualCrew assistance",
+      "24/7 Customer support",
+      "6 voice calls and 3 video meeting with a staff member",
     ],
   },
   {
@@ -67,10 +75,12 @@ const tier = [
     price: 1250,
     discount: true,
     discountPrice: 350,
+    stripeUrl: "https://buy.stripe.com/test_6oE9Cu5Gh1iXcNibIM",
     features: [
-      "160 hours/month of virtual assistance",
+      "160 hours/month of VirtualCrew assistance",
+      "24/7 Customer support",
+      "8 voice calls and 4 video meeting with a staff member",
       "Exclusively buy unlimited hours at $5 per hour after the initial 160 hours",
-      "All features included in the Basic subscription",
     ],
   },
 ];
@@ -80,7 +90,7 @@ export default function PricingSection() {
     <section className="py-20">
       <div className="max-w-7xl mx-auto">
         <h3 className="text-3xl font-bold text-center mb-10 montserrat">
-          Choose the right plan for you
+          Choose the Right Plan for You
         </h3>
         <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 px-2 xl:px-0">
           {tier
@@ -92,11 +102,12 @@ export default function PricingSection() {
                 price,
                 discount,
                 discountPrice,
+                stripeUrl,
                 features,
               }: tierProps) => (
                 <div
                   key={id}
-                  className="border rounded-2xl overflow-hidden shadow-lg hover:scale-105 duration-500"
+                  className="border rounded-2xl overflow-hidden shadow-lg hover:scale-105 duration-500 "
                 >
                   <div className="text-white bg-black text-center py-5 ">
                     <h4 className="font-semibold text-2xl montserrat ">
@@ -104,7 +115,7 @@ export default function PricingSection() {
                     </h4>
                   </div>
                   <div className="py-10 px-5">
-                    <ul className="flex flex-col gap-2 min-h-40">
+                    <ul className="flex flex-col gap-3 min-h-52">
                       {features.map((feature, index) => (
                         <li
                           className="inline-flex text-sm"
@@ -143,9 +154,14 @@ export default function PricingSection() {
                         ${discountPrice} OFF
                       </span>
                     </div>
-                    <button className="border border-white border-2 py-3 px-12 font-semibold mb-5 hover:text-black hover:bg-white hover:border-black duration-500">
-                      Buy Now
-                    </button>
+                    <a
+                      href={stripeUrl}
+                      target="_blank"
+                    >
+                      <button className="border border-white border-2 py-3 px-12 font-semibold mb-5 hover:text-black hover:bg-white hover:border-black duration-500">
+                        Buy Now
+                      </button>
+                    </a>
                   </div>
                 </div>
               ),
@@ -166,6 +182,7 @@ export default function PricingSection() {
                   price,
                   discount,
                   discountPrice,
+                  stripeUrl,
                   features,
                 }: tierProps) => (
                   <div
@@ -197,9 +214,14 @@ export default function PricingSection() {
                         <span className="font-semibold text-2xl">${price}</span>
                         /month
                       </p>
-                      <button className="border border-white border-2 py-3 px-12 font-semibold mb-5 hover:text-black hover:bg-white hover:border-black duration-500">
-                        Buy Now
-                      </button>
+                      <a
+                        href={stripeUrl}
+                        target="_blank"
+                      >
+                        <button className="border border-white border-2 py-3 px-12 font-semibold mb-5 hover:text-black hover:bg-white hover:border-black duration-500">
+                          Buy Now
+                        </button>
+                      </a>
                     </div>
                   </div>
                 ),
