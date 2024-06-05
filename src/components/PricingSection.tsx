@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
+import { motion } from "framer-motion";
 interface tierProps {
   id: number;
   subscription: boolean;
@@ -19,7 +21,7 @@ const tier = [
     price: 400,
     discount: false,
     discountPrice: 0,
-    stripeUrl: "https://buy.stripe.com/test_6oEbKC5Gh5zd5kQ8wx",
+    stripeUrl: "https://buy.stripe.com/test_cN203Qdnj0TU3EQdQR",
     features: [
       "40 hours of VirtualCrew assistance",
       "Once a week video meetings with our VirtualCrew team",
@@ -33,7 +35,7 @@ const tier = [
     price: 350,
     discount: true,
     discountPrice: 50,
-    stripeUrl: "https://buy.stripe.com/test_7sI4ia8Ste5J6oU000",
+    stripeUrl: "https://buy.stripe.com/test_eVadUG2IFdGG3EQcMM",
     features: [
       "40 hours/month of VirtualCrew assistance",
       "24/7 Customer support",
@@ -47,7 +49,7 @@ const tier = [
     price: 650,
     discount: true,
     discountPrice: 150,
-    stripeUrl: "https://buy.stripe.com/test_6oE3e62u5f9N14A5km",
+    stripeUrl: "https://buy.stripe.com/test_7sIbMy82Z9qqfny9AC",
     features: [
       "80 hours/month of VirtualCrew assistance",
       "24/7 Customer support",
@@ -61,7 +63,7 @@ const tier = [
     price: 950,
     discount: true,
     discountPrice: 250,
-    stripeUrl: "https://buy.stripe.com/test_7sI2a28St7Hl28E7sv",
+    stripeUrl: "https://buy.stripe.com/test_eVag2Oab7dGGa3e6or",
     features: [
       "120 hours/month of VirtualCrew assistance",
       "24/7 Customer support",
@@ -75,7 +77,7 @@ const tier = [
     price: 1250,
     discount: true,
     discountPrice: 350,
-    stripeUrl: "https://buy.stripe.com/test_6oE9Cu5Gh1iXcNibIM",
+    stripeUrl: "https://buy.stripe.com/test_9AQ6segzv8mm7V628c",
     features: [
       "160 hours/month of VirtualCrew assistance",
       "24/7 Customer support",
@@ -105,9 +107,13 @@ export default function PricingSection() {
                 stripeUrl,
                 features,
               }: tierProps) => (
-                <div
+                <motion.div
                   key={id}
-                  className="border rounded-2xl overflow-hidden shadow-lg hover:scale-105 duration-500 "
+                  className="border rounded-2xl overflow-hidden shadow-lg hover:scale-105 duration-500"
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: id / 4 }}
+                  viewport={{ once: true }}
                 >
                   <div className="text-white bg-black text-center py-5 ">
                     <h4 className="font-semibold text-2xl montserrat ">
@@ -163,7 +169,7 @@ export default function PricingSection() {
                       </button>
                     </a>
                   </div>
-                </div>
+                </motion.div>
               ),
             )
             .slice(1, 5)}

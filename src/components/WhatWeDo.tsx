@@ -1,12 +1,18 @@
-import { RiDoubleQuotesL } from "react-icons/ri";
-
+"use client";
+import { motion } from "framer-motion";
 const WhatWeDo = () => {
   return (
     <section className="bg-black text-white py-20">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center montserrat mb-8">
+        <motion.h2
+          className="text-4xl font-bold text-center montserrat mb-8"
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.3 }}
+          viewport={{ once: true }}
+        >
           What We Do
-        </h2>
+        </motion.h2>
         <div className="w-36 h-[2px] bg-white my-8 mx-auto"></div>
         {/* <h3 className="text-3xl font-bold text-center montserrat mb-10">
           Unlock Your Full Potential with VirtualCrew.net!

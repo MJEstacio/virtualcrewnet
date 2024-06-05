@@ -31,11 +31,6 @@ const teams = [
     role: "E-commerce Specialist",
     img: "/princess.jpg",
   },
-  {
-    name: "Simon",
-    role: "Assistant Director of Web Development",
-    img: "/profile_placeholder.jpg",
-  },
 
   {
     name: "Amelia L.",

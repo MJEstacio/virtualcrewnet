@@ -25,7 +25,7 @@ const HeroHome = () => {
     }
   }, []);
   return (
-    <section className="bg-gray-50 overflow-x-hidden">
+    <section className="bg-gray-50 ">
       <div>
         <Toaster position="top-center" />
       </div>

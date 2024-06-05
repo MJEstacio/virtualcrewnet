@@ -227,7 +227,7 @@ const Services = () => {
         </h3>
       </div>
       <div
-        className={`grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 my-20 gap-5 text-center`}
+        className={`grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 my-20 gap-5 text-center`}
       >
         {services.map(({ title, icon, content }) => (
           <div
