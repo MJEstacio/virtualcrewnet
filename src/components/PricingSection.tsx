@@ -80,7 +80,7 @@ const tier = [
     stripeUrl: "https://buy.stripe.com/test_9AQ6segzv8mm7V628c",
     features: [
       "160 hours/month of VirtualCrew assistance",
-      "24/7 Customer support",
+      "Unlimited Customer support",
       "8 voice calls and 4 video meeting with a staff member",
       "Exclusively buy unlimited hours at $5 per hour after the initial 160 hours",
     ],

@@ -8,7 +8,7 @@ const Logo = () => {
         src={"/Logo.jpg"}
         width={500}
         height={500}
-        className="w-20"
+        className="w-48"
         alt="Logo"
         priority
       />
