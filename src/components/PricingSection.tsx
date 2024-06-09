@@ -24,7 +24,6 @@ const tier = [
     stripeUrl: "https://buy.stripe.com/test_cN203Qdnj0TU3EQdQR",
     features: [
       "40 hours of VirtualCrew assistance",
-      "Once a week video meetings with our VirtualCrew team",
       "2 voice calls and 1 video meeting with a staff member",
     ],
   },
@@ -38,7 +37,7 @@ const tier = [
     stripeUrl: "https://buy.stripe.com/test_eVadUG2IFdGG3EQcMM",
     features: [
       "40 hours/month of VirtualCrew assistance",
-      "24/7 Customer support",
+      "Unlimited Customer Support",
       "2 voice calls and 1 video meeting with a staff member",
     ],
   },
@@ -52,7 +51,7 @@ const tier = [
     stripeUrl: "https://buy.stripe.com/test_7sIbMy82Z9qqfny9AC",
     features: [
       "80 hours/month of VirtualCrew assistance",
-      "24/7 Customer support",
+      "Unlimited Customer Support",
       "4 voice calls and 2 video meeting with a staff member",
     ],
   },
@@ -66,7 +65,7 @@ const tier = [
     stripeUrl: "https://buy.stripe.com/test_eVag2Oab7dGGa3e6or",
     features: [
       "120 hours/month of VirtualCrew assistance",
-      "24/7 Customer support",
+      "Unlimited Customer Support",
       "6 voice calls and 3 video meeting with a staff member",
     ],
   },
@@ -160,14 +159,18 @@ export default function PricingSection() {
                         ${discountPrice} OFF
                       </span>
                     </div>
-                    <a
+                    {/* <a
                       href={stripeUrl}
                       target="_blank"
                     >
                       <button className="border border-white border-2 py-3 px-12 font-semibold mb-5 hover:text-black hover:bg-white hover:border-black duration-500">
                         Buy Now
                       </button>
-                    </a>
+                    </a> */}
+
+                    <button className="border border-white border-2 py-3 px-12 font-semibold mb-5 hover:text-black hover:bg-white hover:border-black duration-500">
+                      {/* Buy Now */}Coming Soon
+                    </button>
                   </div>
                 </motion.div>
               ),
