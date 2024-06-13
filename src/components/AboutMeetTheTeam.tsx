@@ -9,12 +9,12 @@ const teams = [
   {
     name: "Joseph M.",
     role: "Vice-President",
-    img: "/joseph.jpg",
+    img: "/joseph2.jpg",
   },
   {
     name: "Mark E.",
     role: "Director of Web Development",
-    img: "/mjestacio.jpg",
+    img: "/mjestacio2.jpg",
   },
   {
     name: "Jon",
@@ -40,7 +40,7 @@ const teams = [
   {
     name: "Shaina M.",
     role: "Communications Director",
-    img: "/shaina.jpg",
+    img: "/shaina2.jpg",
   },
 ];
 
