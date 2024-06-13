@@ -57,7 +57,7 @@ export default function Navbar() {
           <Logo2 />
           <div className="flex flex-col justify-center items-center">
             <span className="montserrat font-semibold text-2xl">
-              VIRTUALCREW.NET
+              VirtualCrew.Net
             </span>
 
             <p className="text-center text-gray-300 text-sm">
