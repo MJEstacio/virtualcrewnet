@@ -21,7 +21,7 @@ const tier = [
     price: 400,
     discount: false,
     discountPrice: 0,
-    stripeUrl: "https://buy.stripe.com/test_cN203Qdnj0TU3EQdQR",
+    stripeUrl: "https://buy.stripe.com/28o8A2f132vp8uY9AA",
     features: [
       "40 hours of VirtualCrew assistance",
       "2 voice calls and 1 video meeting with a staff member",
@@ -34,7 +34,7 @@ const tier = [
     price: 350,
     discount: true,
     discountPrice: 50,
-    stripeUrl: "https://buy.stripe.com/test_eVadUG2IFdGG3EQcMM",
+    stripeUrl: "https://buy.stripe.com/fZecQi6ux7PJ7qU6op",
     features: [
       "40 hours/month of VirtualCrew assistance",
       "Unlimited Customer Support",
@@ -48,7 +48,7 @@ const tier = [
     price: 650,
     discount: true,
     discountPrice: 150,
-    stripeUrl: "https://buy.stripe.com/test_7sIbMy82Z9qqfny9AC",
+    stripeUrl: "https://buy.stripe.com/cN2g2ucSVgmfh1ucMO",
     features: [
       "80 hours/month of VirtualCrew assistance",
       "Unlimited Customer Support",
@@ -62,7 +62,7 @@ const tier = [
     price: 950,
     discount: true,
     discountPrice: 250,
-    stripeUrl: "https://buy.stripe.com/test_eVag2Oab7dGGa3e6or",
+    stripeUrl: "https://buy.stripe.com/6oE9E63ilda3eTm28b",
     features: [
       "120 hours/month of VirtualCrew assistance",
       "Unlimited Customer Support",
@@ -76,7 +76,7 @@ const tier = [
     price: 1250,
     discount: true,
     discountPrice: 350,
-    stripeUrl: "https://buy.stripe.com/test_9AQ6segzv8mm7V628c",
+    stripeUrl: "https://buy.stripe.com/14k03wg57fibeTmcMQ",
     features: [
       "160 hours/month of VirtualCrew assistance",
       "Unlimited Customer support",
@@ -159,18 +159,18 @@ export default function PricingSection() {
                         ${discountPrice} OFF
                       </span>
                     </div>
-                    {/* <a
+                    <a
                       href={stripeUrl}
                       target="_blank"
                     >
                       <button className="border border-white border-2 py-3 px-12 font-semibold mb-5 hover:text-black hover:bg-white hover:border-black duration-500">
                         Buy Now
                       </button>
-                    </a> */}
+                    </a>
 
-                    <button className="border border-white border-2 py-3 px-12 font-semibold mb-5 hover:text-black hover:bg-white hover:border-black duration-500">
-                      {/* Buy Now */}Coming Soon
-                    </button>
+                    {/* <button className="border border-white border-2 py-3 px-12 font-semibold mb-5 hover:text-black hover:bg-white hover:border-black duration-500">
+                      Coming Soon
+                    </button> */}
                   </div>
                 </motion.div>
               ),
