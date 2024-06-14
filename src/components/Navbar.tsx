@@ -52,28 +52,38 @@ export default function Navbar() {
   ));
   return (
     <header className="shadow-md bg-black text-white fixed top-0 left-0 w-full z-50">
-      <nav className="max-w-7xl mx-auto flex justify-between montserrat px-4 lg:px-0 py-2 relative flex-col lg:flex-row">
+      <nav className="max-w-7xl mx-auto flex justify-between montserrat px-4 lg:px-0 py-2 relative flex-col md:flex-row">
         <div className="flex gap-2 items-center">
           <Logo2 />
           <div className="flex flex-col justify-center items-center">
-            <span className="montserrat font-semibold text-2xl">
+            <span className="montserrat font-semibold text-xl lg:text-2xl">
               VirtualCrew.Net
             </span>
 
             <p className="text-center text-gray-300 text-sm">
-              Where your Vision is Our Mission
+              Your Vision is Our Mission
             </p>
           </div>
         </div>
+
+        {/* <div className="flex flex-col justify-center items-center">
+          <span className="montserrat font-semibold text-2xl">
+            VirtualCrew.Net
+          </span>
+
+          <p className="text-center text-gray-300 text-sm">
+            Your Vision is Our Mission
+          </p>
+        </div> */}
         <HiMenu
           size={30}
-          className="block lg:hidden absolute right-5 top-8"
+          className="block md:hidden absolute right-5 top-8"
           onClick={() => setShowNav(!showNav)}
         />
         <ul
           className={`gap-5 ${
             showNav ? "flex" : "hidden"
-          } flex-col lg:flex-row lg:flex items-center my-5`}
+          } flex-col md:flex-row md:flex items-center my-5`}
         >
           {navList}
         </ul>
