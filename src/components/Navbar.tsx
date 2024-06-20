@@ -55,15 +55,17 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto flex justify-between montserrat px-4 lg:px-0 py-2 relative flex-col md:flex-row">
         <div className="flex gap-2 items-center">
           <Logo2 />
-          <div className="flex flex-col justify-center items-center">
-            <span className="montserrat font-semibold text-xl lg:text-2xl">
-              VirtualCrew.Net
-            </span>
+          <Link href={"/"}>
+            <div className="flex flex-col justify-center items-center">
+              <span className="montserrat font-semibold text-xl lg:text-2xl">
+                VirtualCrew.Net
+              </span>
 
-            <p className="text-center text-gray-300 text-sm">
-              Your Vision is Our Mission
-            </p>
-          </div>
+              <p className="text-center text-gray-300 text-sm">
+                Your Vision is Our Mission
+              </p>
+            </div>
+          </Link>
         </div>
 
         {/* <div className="flex flex-col justify-center items-center">
