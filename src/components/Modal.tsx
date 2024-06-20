@@ -10,8 +10,8 @@ const Modal = ({ closeModal, item }: any) => {
         className="w-full h-full bg-black/60 absolute top-0 left-0"
         onClick={closeModal}
       ></div>
-      <div className="max-w-7xl bg-white py-16 px-16 text-black relative z-10 rounded-xl shadow-2xl">
-        <div className="flex gap-5">
+      <div className="max-w-7xl max-h-[80vh] overflow-y-scroll bg-white py-16 px-16 my-10 text-black relative z-10 rounded-xl shadow-2xl  ">
+        <div className="flex flex-col gap-5 md:flex-row ">
           <div>
             <div className="relative mt-5 ">
               <Image
@@ -19,7 +19,7 @@ const Modal = ({ closeModal, item }: any) => {
                 alt={item.name}
                 width={500}
                 height={500}
-                className="relative z-10 w-60 rounded"
+                className="relative z-10 w-60 rounded mx-auto"
               />
               <div className="absolute -top-2 -left-2 border rounded w-full h-full border-black"></div>
               <div className="absolute top-2 left-2 border rounded w-full h-full border-black"></div>
