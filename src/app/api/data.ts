@@ -276,7 +276,6 @@ export const teams = [
       "Mashore Method",
       "Google Calendar ",
       "Outlook Calendar ",
-
       "Calendly",
       "Expandi",
       "Photoshop",
