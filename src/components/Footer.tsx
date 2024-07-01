@@ -81,7 +81,9 @@ const Footer = () => {
               className="text-white"
               size={25}
             />
-            <span>Palm Beach Gardens, Florida, United States</span>
+            <span>
+              1303, US 127 South, Suite 104 #1002, Frankfurt, KY 40601
+            </span>
           </div>
           <div className="flex gap-2 items-center">
             <MdOutlineEmail
