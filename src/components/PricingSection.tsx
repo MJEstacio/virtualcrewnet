@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { motion } from "framer-motion";
 interface tierProps {
@@ -10,6 +10,7 @@ interface tierProps {
   discount: boolean;
   discountPrice: number;
   stripeUrl: string;
+  testUrl?: string;
   features: string[];
 }
 
@@ -22,6 +23,7 @@ const tier = [
     discount: false,
     discountPrice: 0,
     stripeUrl: "https://buy.stripe.com/28o8A2f132vp8uY9AA",
+    testUrl: "https://buy.stripe.com/test_cN203Qdnj0TU3EQdQR",
     features: [
       "40 hours of VirtualCrew assistance",
       "2 voice calls and 1 video meeting with a staff member",
@@ -35,6 +37,7 @@ const tier = [
     discount: true,
     discountPrice: 50,
     stripeUrl: "https://buy.stripe.com/fZecQi6ux7PJ7qU6op",
+    testUrl: "https://buy.stripe.com/test_cN203Qdnj0TU3EQdQR",
     features: [
       "40 hours/month of VirtualCrew assistance",
       "Unlimited Customer Support",
@@ -49,6 +52,7 @@ const tier = [
     discount: true,
     discountPrice: 150,
     stripeUrl: "https://buy.stripe.com/cN2g2ucSVgmfh1ucMO",
+    testUrl: "https://buy.stripe.com/test_7sIbMy82Z9qqfny9AC",
     features: [
       "80 hours/month of VirtualCrew assistance",
       "Unlimited Customer Support",
@@ -63,6 +67,7 @@ const tier = [
     discount: true,
     discountPrice: 250,
     stripeUrl: "https://buy.stripe.com/6oE9E63ilda3eTm28b",
+    testUrl: "https://buy.stripe.com/test_eVag2Oab7dGGa3e6or",
     features: [
       "120 hours/month of VirtualCrew assistance",
       "Unlimited Customer Support",
@@ -77,6 +82,7 @@ const tier = [
     discount: true,
     discountPrice: 350,
     stripeUrl: "https://buy.stripe.com/14k03wg57fibeTmcMQ",
+    testUrl: "https://buy.stripe.com/test_9AQ6segzv8mm7V628c",
     features: [
       "160 hours/month of VirtualCrew assistance",
       "Unlimited Customer support",
@@ -87,6 +93,7 @@ const tier = [
 ];
 
 export default function PricingSection() {
+  const [testMode, setTestMode] = useState(false);
   return (
     <section className="py-20">
       <div className="max-w-7xl mx-auto">
@@ -104,6 +111,7 @@ export default function PricingSection() {
                 discount,
                 discountPrice,
                 stripeUrl,
+                testUrl,
                 features,
               }: tierProps) => (
                 <motion.div
@@ -160,7 +168,7 @@ export default function PricingSection() {
                       </span>
                     </div>
                     <a
-                      href={stripeUrl}
+                      href={testMode ? testUrl : stripeUrl}
                       target="_blank"
                     >
                       <button className="border border-white border-2 py-3 px-12 font-semibold mb-5 hover:text-black hover:bg-white hover:border-black duration-500">
