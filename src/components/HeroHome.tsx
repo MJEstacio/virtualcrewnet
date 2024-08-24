@@ -59,9 +59,7 @@ const HeroHome = () => {
             {muted ? "Click to enable sound" : "Click to mute sound"}
           </button>
         </div>
-        <div>
-          <ContactForm />
-        </div>
+        <div>{/* <ContactForm /> */}</div>
         {/* <div className="">
           <div>
             <p className="text-xl uppercase">Lorem ipsum dolor sit amet.</p>
