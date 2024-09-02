@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import CallSection from "@/components/CallSection";
+
 // const montserrat = Montserrat({
 //   subsets: ["latin"],
 //   variable: "--font-montserrat",
@@ -42,6 +43,16 @@ export default function RootLayout({
         <Footer />
         <SpeedInsights />
         {/* <CallSection /> */}
+        <call-us-selector
+          phonesystem-url="https://1287.3cx.cloud"
+          party="na"
+        ></call-us-selector>
+        <Script
+          defer
+          src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js"
+          id="tcx-callus-js"
+        ></Script>
+        ;
       </body>
     </html>
   );

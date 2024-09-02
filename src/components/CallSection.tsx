@@ -13,7 +13,7 @@ const CallSection = () => {
     setOpenChat(() => !openChat);
   };
   return (
-    <section className="fixed bottom-0 left-0 w-full p-5">
+    <section className="fixed bottom-0 left-0 w-full p-5 z-50">
       <div className="flex justify-between items-center ">
         <Link
           href={"tel:+15618188489"}
@@ -28,7 +28,7 @@ const CallSection = () => {
         <div className="relative z-40">
           {openChat ? (
             <motion.div
-              className="absolute bottom-10 left-[-19rem] flex flex-col  rounded-md shadow-lg overflow-hidden z-40 max-w-72"
+              className="absolute bottom-0 left-[-13rem] flex flex-col  rounded-md shadow-lg overflow-hidden z-40 max-w-72"
               initial={{ opacity: 0 }}
               transition={{ ease: "easeIn", duration: 0.2, delay: 0.3 }}
               animate={{ opacity: 1 }}
@@ -59,7 +59,8 @@ const CallSection = () => {
                     questions you have.
                   </p>
                   <Link
-                    href={"/"}
+                    href={"https://wa.me/+15618188489"}
+                    target="_blank"
                     className="flex items-center gap-3 bg-[#25D366] max-w-fit text-white font-semibold px-4 py-2 mx-auto my-5 rounded-full"
                   >
                     <FaWhatsapp
