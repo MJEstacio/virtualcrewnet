@@ -1,23 +1,23 @@
-import { EmailTemplate } from "@/components/EmailTemplate";
+// import { EmailTemplate } from "@/components/EmailTemplate";
 
-import { NextResponse } from "next/server";
-import { Resend } from "resend";
+// import { NextResponse } from "next/server";
+// import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function POST(request: Request) {
-  const { name, email, number, message } = await request.json();
-  await resend.emails.send({
-    from: "info@virtualcrew.net",
-    to: "islay@virtualcrew.live",
-    subject: "Message from VirtualCrew.net",
-    react: EmailTemplate({ name, email, number, message }),
-  });
+// export async function POST(request: Request) {
+//   const { name, email, number, message } = await request.json();
+//   await resend.emails.send({
+//     from: "info@virtualcrew.net",
+//     to: "islay@virtualcrew.live",
+//     subject: "Message from VirtualCrew.net",
+//     react: EmailTemplate({ name, email, number, message }),
+//   });
 
-  return NextResponse.json({
-    status: "ok",
-  });
-}
+//   return NextResponse.json({
+//     status: "ok",
+//   });
+// }
 
 // ijavier78@icloud.com
 // export default async (req: NextApiRequest, res: NextApiResponse) => {

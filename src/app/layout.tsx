@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import CallSection from "@/components/CallSection";
 // const montserrat = Montserrat({
 //   subsets: ["latin"],
 //   variable: "--font-montserrat",
@@ -40,6 +41,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <SpeedInsights />
+        <CallSection />
       </body>
     </html>
   );

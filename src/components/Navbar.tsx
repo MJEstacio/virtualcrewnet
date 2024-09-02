@@ -30,11 +30,11 @@ const navLinks = [
     name: "Contact",
     url: "/contact",
   },
-  {
-    id: 4,
-    name: "Login | SignUp",
-    url: "/login",
-  },
+  // {
+  //   id: 4,
+  //   name: "Login | SignUp",
+  //   url: "/login",
+  // },
 ];
 export default function Navbar() {
   const [showNav, setShowNav] = useState(false);
