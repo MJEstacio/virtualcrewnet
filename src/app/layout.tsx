@@ -41,7 +41,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <SpeedInsights />
-        <CallSection />
+        {/* <CallSection /> */}
       </body>
     </html>
   );
