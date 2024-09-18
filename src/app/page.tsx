@@ -16,7 +16,7 @@ export default function Home() {
       <WhatWeDo />
       <PricingSection />
       <Industry />
-      <Services />
+      {/* <Services /> */}
       <CTASection />
       <HomeFAQ />
     </main>
