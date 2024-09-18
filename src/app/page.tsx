@@ -2,6 +2,7 @@ import CTASection from "@/components/CTASection";
 import HeroHome from "@/components/HeroHome";
 import HomeFAQ from "@/components/HomeFAQ";
 import HomeNews from "@/components/HomeNews";
+import Industry from "@/components/Industry";
 import PricingSection from "@/components/PricingSection";
 import Services from "@/components/Services";
 
@@ -14,6 +15,7 @@ export default function Home() {
       <HomeNews />
       <WhatWeDo />
       <PricingSection />
+      <Industry />
       <Services />
       <CTASection />
       <HomeFAQ />

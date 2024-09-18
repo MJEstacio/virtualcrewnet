@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import CallSection from "@/components/CallSection";
+
 import LiveChat from "@/components/LiveChat";
 
 //   subsets: ["latin"],
@@ -42,7 +42,6 @@ export default function RootLayout({
         {children}
         <Footer />
         <SpeedInsights />
-        {/* <CallSection /> */}
         <LiveChat />
       </body>
     </html>

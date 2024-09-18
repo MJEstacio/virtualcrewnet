@@ -103,7 +103,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto border-t-2 border-gray-200 py-5 flex justify-between px-2 flex-col sm:flex-row ">
+      <div className="max-w-7xl mx-auto border-t-2 border-gray-200 pt-5 flex justify-between px-2 flex-col sm:flex-row ">
         <p className="font-semibold text-center md:text-left mb-5 md:mb-0">
           © {year} VirtualCrew.Net All rights reserved
         </p>

@@ -79,7 +79,7 @@ export default function Navbar() {
         </div> */}
         <HiMenu
           size={30}
-          className="block md:hidden absolute right-5 top-8"
+          className="block md:hidden absolute right-5 top-10"
           onClick={() => setShowNav(!showNav)}
         />
         <ul

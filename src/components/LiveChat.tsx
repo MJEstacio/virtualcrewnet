@@ -13,6 +13,7 @@ const LiveChat = () => {
         <div
           key={index}
           dangerouslySetInnerHTML={{ __html: chat.body }}
+          className="bg-black"
         ></div>
       ))}
     </div>
