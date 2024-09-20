@@ -346,7 +346,9 @@ export const teams = [
 // Industry Section Data
 export const industryList = [
   {
-    industry: "Healthcare",
+    industry: "Arts",
+    description:
+      "**VirtualCrew.net** offers specialized virtual assistants to manage all administrative tasks for artists and entertainment professionals. Our team can handle everything from scheduling and communication management to marketing support and event booking. With expertise in video creation, social media marketing, and brand building, we help artists grow their online presence, manage press releases, and promote their work across platforms.",
     content: [
       "Scheduling patient appointments",
       "Medical billing and coding",
@@ -357,18 +359,48 @@ export const industryList = [
     ],
   },
   {
-    industry: "Real Estate",
+    industry: "Government & Public Sector",
+    description:
+      "At VirtualCrew.net, we provide comprehensive support to government agencies and non-profit organizations, enabling them to streamline operations and focus on their core missions.",
     content: [
-      "Lead generation and follow-up",
-      "Property listing management",
-      "Appointment scheduling and calendar management",
-      "Handling buyer and renter inquiries",
-      "Market research and data entry",
-      "Transaction coordination",
+      "Managing calendars and scheduling meetings",
+      "Organizing and responding to emails",
+      "Data entry and database management",
+      "Preparing reports and presentations",
+      "Filing and document organization",
+    ],
+  },
+  {
+    industry: "Non-Profit Organizations",
+    description:
+      "At VirtualCrew.net, we provide comprehensive support to government agencies and non-profit organizations, enabling them to streamline operations and focus on their core missions.",
+    content: [
+      "Donor communication and fundraising support",
+      "Event planning and coordination",
+      "Volunteer management",
+      "Maintaining donor databases",
+      "Tracking volunteer hours and contributions",
+      "Managing donor databases",
+    ],
+  },
+
+  {
+    industry: "Automotive",
+    description:
+      "In the automotive industry, **VirtualCrew.net** supports businesses by providing virtual assistants for administrative, marketing, and customer service tasks. Our team can assist with sales prospecting, lead generation, and digital marketing campaigns, enabling you to focus on operations while growing your market reach. With our SEO and web development services, we can help automotive companies establish an online presence and attract new customers.",
+    content: [
+      "Appointment scheduling for services",
+      "Customer support and communication",
+      "Inventory management for dealerships",
+      "Marketing and promotional activities",
+      "Data entry and record management",
+      "Vendor communication and management",
     ],
   },
   {
     industry: "Finance & Accounting",
+    description:
+      "**VirtualCrew.net** connects businesses with certified finance and accounting virtual assistants who manage bookkeeping, financial data, and transaction reconciliations. For startups, we offer affordable recruitment of licensed accountants, including CPAs, ensuring your finances are handled professionally without exceeding your budget. Our VAs can also assist with financial reporting, tax preparation, and other vital accounting services.",
     content: [
       "Bookkeeping and financial reporting",
       "Accounts payable/receivable management",
@@ -379,7 +411,35 @@ export const industryList = [
     ],
   },
   {
-    industry: "E-commerce",
+    industry: "Broadcast & Media",
+    description:
+      "Broadcasting and media companies benefit from **VirtualCrew.net** VAs who specialize in video editing, podcast production, and live broadcasting support. Our virtual team can handle channel management, social media marketing, and content creation, ensuring that your media projects are executed professionally from start to finish, even in remote environments.",
+    content: [
+      "Social media management",
+      "PR outreach and communication",
+      "Content creation and scheduling",
+      "Market research and audience analysis",
+      "Podcast and video production support",
+      "Email marketing and campaign management",
+    ],
+  },
+  {
+    industry: "Construction",
+    description:
+      "For the construction industry, **VirtualCrew.net** provides virtual assistants that support Project Managers, Construction Coordinators, and on-site workers. Our VAs handle inventory management, remote communication, and administrative tasks. Additionally, we offer project planning, video updates for stakeholders, and document management to keep construction projects running smoothly.",
+    content: [
+      "Project management support",
+      "Vendor communication and scheduling",
+      "Document preparation (permits, contracts)",
+      "Customer communication and updates",
+      "Budget and expense tracking",
+      "Administrative tasks (e.g., data entry, invoicing)",
+    ],
+  },
+  {
+    industry: "eCommerce",
+    description:
+      "**VirtualCrew.net** offers dedicated eCommerce virtual assistants who manage order fulfillment, stock management, and customer service. We also provide expertise in web development, SEO, and digital marketing, helping eCommerce businesses optimize their online stores across platforms like Amazon, Etsy, or custom websites. From product listing optimization to building brand presence, our VAs keep your eCommerce operation efficient and scalable.",
     content: [
       "Product listing management",
       "Order processing and fulfillment",
@@ -390,128 +450,70 @@ export const industryList = [
     ],
   },
   {
-    industry: "Legal",
+    industry: "Education",
+    description:
+      "Educational institutions worldwide can rely on **VirtualCrew.net** VAs to provide back-end support for online schooling systems, research assistance for professors, and even recruitment and admissions processing. Our team also specializes in video creation for e-learning modules, social media marketing for academic institutions, and SEO to ensure your educational platform reaches the right audience.",
+    content: [],
+  },
+  {
+    industry: "Farming & Agriculture",
+    description:
+      "**VirtualCrew.net** virtual assistants bridge the gap between technology and farming. We provide administrative support, customer service, and research assistance to agricultural companies. Our VAs help manage inventory, customer outreach, and even AI-powered tech integration, making your farming operations more efficient. We also offer SEO and web development services to enhance online visibility for agricultural enterprises.",
     content: [
-      "Document preparation and review",
-      "Legal research and case law analysis",
-      "Scheduling client meetings and court dates",
+      "Farm inventory management",
+      "Customer communication (e.g., distributors, suppliers)",
+      "Data entry and reporting (crop yields, sales)",
+      "Scheduling of labor and equipment",
+      "Marketing and social media management",
+      "Vendor management",
+    ],
+  },
+  {
+    industry: "Healthcare",
+    description:
+      "**VirtualCrew.net** offers healthcare VAs who assist with medical record management, patient scheduling, and inventory tracking. Our VAs specialize in providing administrative support for telehealth and Medtech companies. We also support healthcare professionals with social media marketing, SEO, and web development, helping them build a strong digital presence while maintaining smooth day-to-day operations.",
+    content: [
+      "Scheduling patient appointments",
+      "Medical billing and coding",
+      "Managing medical records",
+      "Customer support (answering common queries)",
+      "Insurance claims processing",
+      "Prescription refill management",
+    ],
+  },
+  {
+    industry: "Health & Wellness",
+    description:
+      "Health and wellness professionals can offload tasks to **VirtualCrew.net** virtual assistants. Our team manages everything from social media marketing to video creation for fitness classes or health coaching. We help build and promote your brand online, allowing wellness studios, trainers, and coaches to engage effectively with their clients while maintaining a robust digital presence.",
+    content: [
+      "Appointment scheduling for clients",
       "Client communication and follow-up",
-      "Billing and invoicing support",
-      "Contract management",
+      "Social media and content creation",
+      "Marketing and promotional activities",
+      "Managing online classes and course content",
+      "Billing and membership management",
     ],
   },
   {
-    industry: "Information Technology (IT)",
-    content: [
-      "Technical support for customers",
-      "Data entry and database management",
-      "Project management support",
-      "Software testing and bug tracking",
-      "IT helpdesk support",
-      "Documenting processes and procedures",
-    ],
-  },
-  {
-    industry: "Marketing & Advertising",
-    content: [
-      "Social media management and content creation",
-      "SEO and website optimization",
-      "Email marketing campaigns",
-      "Market research and data analysis",
-      "Advertising campaign management",
-      "Event planning and coordination",
-    ],
-  },
-  {
-    industry: "Consulting",
-    content: [
-      "Client scheduling and communication",
-      "Report writing and presentation preparation",
-      "Data analysis and research",
-      "Project management assistance",
-      "Travel arrangements",
-      "Client onboarding and follow-up",
-    ],
-  },
-  {
-    industry: "Hospitality",
+    industry: "Hospitality & Tourism",
+    description:
+      "In the hospitality industry, **VirtualCrew.net** VAs handle bookings, reservations, and customer service, ensuring a seamless experience for clients. Our team also excels in social media management, SEO, and web development, helping tourism companies and travel agencies create a strong brand identity, attract more customers, and manage online operations efficiently",
     content: [
       "Reservation management",
       "Customer service support (handling inquiries and complaints)",
       "Event planning assistance",
+      "Managing reservations and bookings",
       "Social media management and promotion",
+      "Research on travel destinations",
       "Travel booking and itinerary management",
+      "Handling travel logistics and coordination",
       "Administrative tasks (e.g., invoicing, data entry)",
     ],
   },
   {
-    industry: "Travel & Tourism",
-    content: [
-      "Travel booking and itinerary planning",
-      "Customer support for travelers",
-      "Managing reservations and bookings",
-      "Research on travel destinations",
-      "Marketing and promotional activities",
-      "Handling travel logistics and coordination",
-    ],
-  },
-  {
-    industry: "Retail",
-    content: [
-      "Customer service and order management",
-      "Inventory tracking and management",
-      "Handling returns and exchanges",
-      "Marketing and promotional activities",
-      "Product research and sourcing",
-      "Data entry and administrative tasks",
-    ],
-  },
-  {
-    industry: "Non-Profit Organizations",
-    content: [
-      "Donor communication and fundraising support",
-      "Event planning and coordination",
-      "Volunteer management",
-      "Social media and content creation",
-      "Grant research and application preparation",
-      "Managing donor databases",
-    ],
-  },
-  {
-    industry: "Entrepreneurs & Startups",
-    content: [
-      "Administrative support (e.g., email, calendar management)",
-      "Market research and competitor analysis",
-      "Social media and marketing activities",
-      "Project management and task delegation",
-      "Customer support and lead generation",
-      "Product development research",
-    ],
-  },
-  {
-    industry: "Entertainment",
-    content: [
-      "Talent scheduling and management",
-      "Social media management and fan engagement",
-      "Event planning and coordination",
-      "Marketing and promotional support",
-      "Travel arrangements for shows and tours",
-      "Managing communication with press and stakeholders",
-    ],
-  },
-  {
-    industry: "Publishing",
-    content: [
-      "Content editing and proofreading",
-      "Author scheduling and communication",
-      "Book promotion and marketing campaigns",
-      "Digital book sales and distribution management",
-      "Reader inquiries and customer support",
-      "Blog and website management",
-    ],
-  },
-  {
     industry: "Human Resources (HR)",
+    description:
+      "**VirtualCrew.net** enables businesses to outsource HR processes such as recruitment, payroll management, and employee onboarding. Our VAs support growing businesses by managing these tasks remotely, reducing overhead costs. Additionally, we offer HR marketing support through SEO, social media, and web development services to help HR teams attract top talent.",
     content: [
       "Recruitment and candidate screening",
       "Employee onboarding and offboarding",
@@ -523,6 +525,8 @@ export const industryList = [
   },
   {
     industry: "Insurance",
+    description:
+      "Insurance professionals can benefit from **VirtualCrew.net** VAs who manage administrative tasks, lead generation, and customer service. Our assistants also handle marketing efforts through SEO, social media management, and content creation, helping insurance agents and companies enhance their client outreach while managing internal processes efficiently.",
     content: [
       "Policy management and renewals",
       "Claims processing support",
@@ -533,29 +537,35 @@ export const industryList = [
     ],
   },
   {
-    industry: "Architecture & Engineering",
+    industry: "IT & Technology",
+    description:
+      "Tech companies can leverage **VirtualCrew.net** for virtual assistants skilled in project management, software development support, and customer service. Our VAs provide comprehensive administrative assistance, freeing up time for your tech teams to focus on development. We also offer SEO, web development, and social media marketing services tailored for tech startups and SaaS businesses.",
     content: [
-      "Project management and coordination",
-      "Client communication and scheduling",
-      "Research and data collection for projects",
-      "Document preparation and revision",
-      "Vendor management",
-      "Budget tracking and reporting",
+      "Technical support for customers",
+      "Data entry and database management",
+      "Project management support",
+      "Software testing and bug tracking",
+      "IT helpdesk support",
+      "Documenting processes and procedures",
     ],
   },
   {
-    industry: "Manufacturing",
+    industry: "Legal",
+    description:
+      "Legal firms benefit from **VirtualCrew.net** virtual assistants who handle research, client intake, transcription, and administrative tasks. Our legal VAs also support marketing efforts, including SEO and web development, helping legal professionals build an online presence while ensuring back-office tasks are managed efficiently and at a lower cost than hiring locally.",
     content: [
-      "Inventory tracking and management",
-      "Order processing and fulfillment",
-      "Vendor communication and management",
-      "Data entry and administrative support",
-      "Customer service and order inquiries",
-      "Logistics and supply chain coordination",
+      "Document preparation and review",
+      "Legal research and case law analysis",
+      "Scheduling client meetings and court dates",
+      "Client communication and follow-up",
+      "Billing and invoicing support",
+      "Contract management",
     ],
   },
   {
-    industry: "Transportation & Logistics",
+    industry: "Logistics & Trucking",
+    description:
+      "**VirtualCrew.net** virtual assistants support logistics companies by managing dispatch services, customer queries, and supply chain communication. Our team also provides SEO and web development services to help logistics businesses improve online visibility, streamline operations, and attract new clients while ensuring smooth day-to-day activities.",
     content: [
       "Dispatch coordination and communication",
       "Customer service for shipment tracking",
@@ -566,106 +576,67 @@ export const industryList = [
     ],
   },
   {
-    industry: "Event Planning",
+    industry: "Manufacturing",
+    description:
+      "In the manufacturing sector, **VirtualCrew.net** VAs assist with supply chain management, vendor coordination, and inventory control using specialized software. We also offer marketing support, including SEO, social media management, and web development, allowing manufacturing companies to focus on production while we handle back-office tasks.",
     content: [
-      "Venue research and booking",
-      "Vendor communication and management",
-      "Guest list management and RSVP tracking",
-      "Budget tracking and reporting",
-      "Marketing and promotional activities",
-      "Logistics coordination",
-    ],
-  },
-  {
-    industry: "Construction",
-    content: [
-      "Project management support",
-      "Vendor communication and scheduling",
-      "Document preparation (permits, contracts)",
-      "Customer communication and updates",
-      "Budget and expense tracking",
-      "Administrative tasks (e.g., data entry, invoicing)",
-    ],
-  },
-  {
-    industry: "Agriculture",
-    content: [
-      "Farm inventory management",
-      "Customer communication (e.g., distributors, suppliers)",
-      "Data entry and reporting (crop yields, sales)",
-      "Scheduling of labor and equipment",
-      "Marketing and social media management",
-      "Vendor management",
-    ],
-  },
-  {
-    industry: "Media & Communications",
-    content: [
-      "Social media management",
-      "PR outreach and communication",
-      "Content creation and scheduling",
-      "Market research and audience analysis",
-      "Podcast and video production support",
-      "Email marketing and campaign management",
-    ],
-  },
-  {
-    industry: "Automotive",
-    content: [
-      "Appointment scheduling for services",
-      "Customer support and communication",
-      "Inventory management for dealerships",
-      "Marketing and promotional activities",
-      "Data entry and record management",
-      "Vendor communication and management",
-    ],
-  },
-  {
-    industry: "Telecommunications",
-    content: [
-      "Customer support and troubleshooting",
-      "Appointment scheduling for installation/repair",
-      "Data entry and management",
-      "Marketing and customer retention activities",
-      "Technical support assistance",
-      "Billing and payment management",
-    ],
-  },
-  {
-    industry: "Fashion & Apparel",
-    content: [
-      "Product listing management",
       "Inventory tracking and management",
-      "Customer support (returns, exchanges, inquiries)",
-      "Social media and influencer engagement",
       "Order processing and fulfillment",
-      "Marketing and promotional campaigns",
+      "Vendor communication and management",
+      "Data entry and administrative support",
+      "Customer service and order inquiries",
+      "Logistics and supply chain coordination",
     ],
   },
   {
-    industry: "Energy & Utilities",
+    industry: "Marketing & Advertising",
+    description:
+      "Marketing and advertising agencies can take full advantage of **VirtualCrew.net** VAs for digital marketing, content creation, and social media management. Our team also handles web design, SEO, and email marketing campaigns, allowing agencies to scale while focusing on high-level strategies. With our global talent pool, you get access to top-notch virtual assistants for both short- and long-term projects.",
     content: [
-      "Customer service and support",
-      "Data entry and management (usage, billing)",
-      "Scheduling of service appointments",
-      "Market research and analysis",
-      "Billing and invoicing support",
-      "Technical support for customers",
+      "Social media management and content creation",
+      "SEO and website optimization",
+      "Email marketing campaigns",
+      "Market research and data analysis",
+      "Advertising campaign management",
+      "Event planning and coordination",
     ],
   },
   {
-    industry: "Security",
+    industry: "Professional Services & Consulting",
+    description:
+      "**VirtualCrew.net** helps professional services and consulting firms grow by providing virtual assistants who manage reports, marketing, operations, and customer service. Our VAs handle routine tasks, freeing up consultants to focus on their clients. We also offer web development, SEO, and social media management to ensure that your consulting practice thrives online.",
     content: [
-      "Monitoring and alarm response coordination",
-      "Scheduling and dispatching security personnel",
-      "Customer communication and support",
-      "Report writing and data entry",
-      "Vendor and equipment management",
-      "Invoice processing and payment tracking",
+      "Client scheduling and communication",
+      "Report writing and presentation preparation",
+      "Data analysis and research",
+      "Project management assistance",
+      "Travel arrangements",
+      "Client onboarding and follow-up",
+    ],
+  },
+  {
+    industry: "Property Management",
+    description:
+      "**VirtualCrew.net** provides virtual assistants for property managers, helping them manage schedules, track transactions, and maintain communication with clients. Our VAs also support marketing and SEO efforts, helping property managers attract more clients and streamline their processes, all while ensuring properties are well-maintained.",
+    content: [],
+  },
+  {
+    industry: "Real Estate",
+    description:
+      "### 22. Real Estate Real estate professionals can maximize their productivity with **VirtualCrew.net** VAs who handle lead generation, CRM optimization, and marketing tasks. Our team specializes in video creation for virtual tours, social media marketing, SEO, and web development, helping real estate agents and brokers build a strong digital presence while growing their client base.",
+    content: [
+      "Lead generation and follow-up",
+      "Property listing management",
+      "Appointment scheduling and calendar management",
+      "Handling buyer and renter inquiries",
+      "Market research and data entry",
+      "Transaction coordination",
     ],
   },
   {
     industry: "Food & Beverage",
+    description:
+      "The food and beverage industry benefits from **VirtualCrew.net** VAs who assist with order processing, inventory management, and customer service. We also offer digital marketing support through social media management, SEO, and web development, helping F&B companies adapt to the new normal and thrive in the digital marketplace.",
     content: [
       "Reservation and event management",
       "Customer service (handling orders, complaints)",
@@ -676,62 +647,188 @@ export const industryList = [
     ],
   },
   {
-    industry: "Fitness & Wellness",
+    industry: "Retail",
+    description:
+      "For retail businesses, **VirtualCrew.net** virtual assistants manage inventory, customer service, and marketing tasks. Our team also provides web development, SEO, and social media marketing services to help retailers bridge the gap between their physical and digital operations, creating a seamless shopping experience for customers.",
     content: [
-      "Appointment scheduling for clients",
-      "Client communication and follow-up",
-      "Social media and content creation",
+      "Customer service and order management",
+      "Inventory tracking and management",
+      "Handling returns and exchanges",
       "Marketing and promotional activities",
-      "Managing online classes and course content",
-      "Billing and membership management",
+      "Product research and sourcing",
+      "Data entry and administrative tasks",
     ],
   },
+
   {
-    industry: "Art & Design",
+    industry: "Small Business Owners & Startups",
+    description:
+      "Small businesses and startups save time and resources by working with **VirtualCrew.net**. Our virtual assistants handle everything from business development and customer service to digital marketing, SEO, and web development. By outsourcing essential tasks, small businesses can scale efficiently while keeping costs low.",
     content: [
-      "Client communication and scheduling",
-      "Project management and coordination",
-      "Social media management and promotion",
-      "Market research and trend analysis",
-      "Invoice and payment processing",
-      "Event planning and gallery coordination",
+      "Administrative support (e.g., email, calendar management)",
+      "Market research and competitor analysis",
+      "Social media and marketing activities",
+      "Project management and task delegation",
+      "Customer support and lead generation",
+      "Product development research",
     ],
   },
   {
-    industry: "Gaming",
+    industry: "Solopreneurs",
+    description:
+      "Solopreneurs benefit from **VirtualCrew.net** VAs who take over tasks like social media branding, SEO, and administrative duties, allowing them to focus on growing their businesses. Our VAs provide web development, video editing, and digital marketing support, ensuring that solopreneurs can build their brand and scale their operations without getting overwhelmed by day-to-day tasks. This revision focuses on the specific services **VirtualCrew.net** offers, such as:",
     content: [
-      "Customer support and community management",
-      "Game testing and bug reporting",
-      "Social media and marketing campaigns",
-      "Event planning and coordination (e.g., tournaments)",
-      "Data entry and analysis for game metrics",
-      "Content creation and management",
+      "Recruitment",
+      "Outsourcing",
+      "Digital Marketing tailored for each industry ",
     ],
   },
-  {
-    industry: "Pharmaceuticals",
-    content: [
-      "Research assistance and data management",
-      "Appointment scheduling with healthcare providers",
-      "Customer support for pharmaceutical queries",
-      "Document preparation (clinical trial data, reports)",
-      "Supply chain and inventory tracking",
-      "Marketing and compliance support",
-    ],
-  },
-  {
-    industry: "Pet Care",
-    content: [
-      "Appointment scheduling for grooming, veterinary services",
-      "Customer communication and follow-up",
-      "Inventory tracking and order management",
-      "Marketing and social media promotion",
-      "Administrative support (e.g., invoicing, data entry)",
-      "Event planning (e.g., pet adoption events)",
-    ],
-  },
-  {
-    industry: "Government & Public Sector",
-    content: ["Scheduling and communication with stakeholders"],
-  },
+  // {
+  //   industry: "Entertainment",
+  //   description: "",
+  //   content: [
+  //     "Talent scheduling and management",
+  //     "Social media management and fan engagement",
+  //     "Event planning and coordination",
+  //     "Marketing and promotional support",
+  //     "Travel arrangements for shows and tours",
+  //     "Managing communication with press and stakeholders",
+  //   ],
+  // },
+  // {
+  //   industry: "Publishing",
+  //   description: "",
+  //   content: [
+  //     "Content editing and proofreading",
+  //     "Author scheduling and communication",
+  //     "Book promotion and marketing campaigns",
+  //     "Digital book sales and distribution management",
+  //     "Reader inquiries and customer support",
+  //     "Blog and website management",
+  //   ],
+  // },
+
+  // {
+  //   industry: "Architecture & Engineering",
+  //   description: "",
+  //   content: [
+  //     "Project management and coordination",
+  //     "Client communication and scheduling",
+  //     "Research and data collection for projects",
+  //     "Document preparation and revision",
+  //     "Vendor management",
+  //     "Budget tracking and reporting",
+  //   ],
+  // },
+
+  // {
+  //   industry: "Event Planning",
+  //   description: "",
+  //   content: [
+  //     "Venue research and booking",
+  //     "Vendor communication and management",
+  //     "Guest list management and RSVP tracking",
+  //     "Budget tracking and reporting",
+  //     "Marketing and promotional activities",
+  //     "Logistics coordination",
+  //   ],
+  // },
+
+  // {
+  //   industry: "Telecommunications",
+  //   description: "",
+  //   content: [
+  //     "Customer support and troubleshooting",
+  //     "Appointment scheduling for installation/repair",
+  //     "Data entry and management",
+  //     "Marketing and customer retention activities",
+  //     "Technical support assistance",
+  //     "Billing and payment management",
+  //   ],
+  // },
+  // {
+  //   industry: "Fashion & Apparel",
+  //   description: "",
+  //   content: [
+  //     "Product listing management",
+  //     "Inventory tracking and management",
+  //     "Customer support (returns, exchanges, inquiries)",
+  //     "Social media and influencer engagement",
+  //     "Order processing and fulfillment",
+  //     "Marketing and promotional campaigns",
+  //   ],
+  // },
+  // {
+  //   industry: "Energy & Utilities",
+  //   description: "",
+  //   content: [
+  //     "Customer service and support",
+  //     "Data entry and management (usage, billing)",
+  //     "Scheduling of service appointments",
+  //     "Market research and analysis",
+  //     "Billing and invoicing support",
+  //     "Technical support for customers",
+  //   ],
+  // },
+  // {
+  //   industry: "Security",
+  //   description: "",
+  //   content: [
+  //     "Monitoring and alarm response coordination",
+  //     "Scheduling and dispatching security personnel",
+  //     "Customer communication and support",
+  //     "Report writing and data entry",
+  //     "Vendor and equipment management",
+  //     "Invoice processing and payment tracking",
+  //   ],
+  // },
+
+  // {
+  //   industry: "Art & Design",
+  //   description: "",
+  //   content: [
+  //     "Client communication and scheduling",
+  //     "Project management and coordination",
+  //     "Social media management and promotion",
+  //     "Market research and trend analysis",
+  //     "Invoice and payment processing",
+  //     "Event planning and gallery coordination",
+  //   ],
+  // },
+  // {
+  //   industry: "Gaming",
+  //   description: "",
+  //   content: [
+  //     "Customer support and community management",
+  //     "Game testing and bug reporting",
+  //     "Social media and marketing campaigns",
+  //     "Event planning and coordination (e.g., tournaments)",
+  //     "Data entry and analysis for game metrics",
+  //     "Content creation and management",
+  //   ],
+  // },
+  // {
+  //   industry: "Pharmaceuticals",
+  //   description: "",
+  //   content: [
+  //     "Research assistance and data management",
+  //     "Appointment scheduling with healthcare providers",
+  //     "Customer support for pharmaceutical queries",
+  //     "Document preparation (clinical trial data, reports)",
+  //     "Supply chain and inventory tracking",
+  //     "Marketing and compliance support",
+  //   ],
+  // },
+  // {
+  //   industry: "Pet Care",
+  //   description: "",
+  //   content: [
+  //     "Appointment scheduling for grooming, veterinary services",
+  //     "Customer communication and follow-up",
+  //     "Inventory tracking and order management",
+  //     "Marketing and social media promotion",
+  //     "Administrative support (e.g., invoicing, data entry)",
+  //     "Event planning (e.g., pet adoption events)",
+  //   ],
+  // },
 ];

@@ -29,9 +29,22 @@ const Industry = () => {
               onClick={toggleShow(item.industry)}
             >
               <div className="flex justify-between items-center py-3">
-                <h4 className="text-lg font-semibold ">{item.industry}</h4>
+                <h4
+                  className={`text-lg font-semibold ${
+                    show === item.industry ? "underline" : ""
+                  } `}
+                >
+                  {item.industry}
+                </h4>
                 {show === item.industry ? <FaMinus /> : <FaPlus />}
               </div>
+              <p
+                className={`${
+                  show === item.industry ? "block" : " hidden"
+                } flex flex-col gap-2 mb-5 duration-200 text-sm`}
+              >
+                {item.description}
+              </p>
               <ul
                 className={`${
                   show === item.industry ? "block" : " hidden"
@@ -45,7 +58,7 @@ const Industry = () => {
                     <div>
                       <LuChevronsRight className="mt-1" />
                     </div>
-                    <div>{list}</div>
+                    <div className="text-sm">{list}</div>
                   </li>
                 ))}
               </ul>
