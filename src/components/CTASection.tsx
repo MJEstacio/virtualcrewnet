@@ -10,7 +10,7 @@ const CTASection = () => {
         <h3 className="text-3xl text-center text-white font-mono tracking-wider max-w-4xl px-2 lg:px-0  leading-10 font-serif ">
           Let&pos;s s bring your Visions to Life. Together,
           <br />
-          We'&pos;ll realize your Vision
+          We&pos;ll realize your Vision
         </h3>
         {/* Unlock your business&apos;s full potential. Reach out now and
           Let&apos;s start achieving your goals together! */}
