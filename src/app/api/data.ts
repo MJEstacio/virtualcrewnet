@@ -832,3 +832,74 @@ export const industryList = [
   //   ],
   // },
 ];
+export const industryForImpaired = [
+  {
+    industry: "Digital Accessibility Support",
+    description: "",
+    content: [
+      "Assistance with screen reader technology, voice recognition software, and magnification tools.",
+      "Training on how to navigate websites, apps, and digital platforms efficiently.",
+      "Providing guidance on how to make documents, emails, and presentations more accessible.",
+    ],
+  },
+  {
+    industry: "Administrative Assistance",
+    description: "",
+    content: [
+      "Managing emails, scheduling appointments, and organizing calendars.",
+      "Transcribing audio notes, meetings, and documents.",
+      "Creating and editing documents with accessibility features in mind.",
+    ],
+  },
+  {
+    industry: "Content Creation & Management",
+    description: "",
+    content: [
+      "Assisting with blog posts, articles, and social media content tailored for accessibility.",
+      "Ensuring websites, newsletters, and digital marketing materials are optimized for screen readers.",
+      "Supporting the creation of audio descriptions for visual content.",
+    ],
+  },
+  {
+    industry: "Personalized Virtual Coaching & Training",
+    description: "",
+    content: [
+      "Offering one-on-one coaching for mastering assistive technologies.",
+      "Training on productivity tools, software applications, and online platforms.",
+      "Guidance on how to improve personal skills, from communication to time management.",
+    ],
+  },
+  {
+    industry: "Research & Information Gathering",
+    description: "",
+    content: [
+      "Conducting online research tailored to clients' needs, from business opportunities to personal interests.",
+      "Providing detailed, accessible summaries of complex information or documents.",
+      "Assisting with finding resources, tools, and services relevant to blind and visually impaired individuals.",
+    ],
+  },
+  {
+    industry: "Online Shopping & Navigation Assistance",
+    description: "",
+    content: [
+      "Helping clients navigate e-commerce websites, compare products, and complete purchases.",
+      "Assisting with managing subscriptions, memberships, and online accounts.",
+    ],
+  },
+  {
+    industry: "Remote Tech Support",
+    description: "",
+    content: [
+      "Troubleshooting accessibility software, hardware, and device issues.",
+      "Offering guidance on setting up new devices, apps, and assistive technology tools.",
+    ],
+  },
+  {
+    industry: "Business Support Services",
+    description: "",
+    content: [
+      "Virtual assistance for blind and visually impaired entrepreneurs, including managing communication, client relations, and project coordination.",
+      "Assisting with data entry, spreadsheet management, and accessible report generation.",
+    ],
+  },
+];
