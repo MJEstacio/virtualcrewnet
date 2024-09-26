@@ -28,7 +28,7 @@ const socialIcons = [
   },
   {
     icon: <AiFillLinkedin size={25} />,
-    url: "/",
+    url: "https://www.linkedin.com/company/virtualcrew-net/",
   },
   {
     icon: <FaYoutube size={25} />,
