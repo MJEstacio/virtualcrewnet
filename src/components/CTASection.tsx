@@ -8,9 +8,9 @@ const CTASection = () => {
     >
       <div className="max-w-7xl mx-auto  flex justify-center flex-col gap-10 px-2 lg:px-0 ">
         <h3 className="text-3xl text-center text-white font-mono tracking-wider max-w-4xl px-2 lg:px-0  leading-10 font-serif ">
-          Let&pos;s s bring your Visions to Life. Together,
+          Let&apos;s s bring your Visions to Life. Together,
           <br />
-          We&pos;ll realize your Vision
+          We&apos;ll realize your Vision
         </h3>
         {/* Unlock your business&apos;s full potential. Reach out now and
           Let&apos;s start achieving your goals together! */}
