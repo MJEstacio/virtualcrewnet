@@ -13,9 +13,9 @@ const AboutPage = () => {
   return (
     <main className="relative">
       <div className="bg-white pt-44 pb-16">
-        <h2 className="text-3xl mx-auto montserrat font-bold px-5 py-10 border-t-2 border-b-2 w-fit text-center">
+        <h1 className="text-3xl mx-auto montserrat font-bold px-5 py-10 border-t-2 border-b-2 w-fit text-center">
           Meet The VirtualCrew Team
-        </h2>
+        </h1>
       </div>
 
       <AboutMeetTheTeam teams={teams} />
