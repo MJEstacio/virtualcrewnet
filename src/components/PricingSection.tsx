@@ -97,9 +97,9 @@ export default function PricingSection() {
   return (
     <section className="py-20">
       <div className="max-w-7xl mx-auto">
-        <h3 className="text-3xl font-bold text-center mb-10 montserrat px-5">
+        <h2 className="text-3xl font-bold text-center mb-10 montserrat px-5">
           Choose the Right Plan for You
-        </h3>
+        </h2>
         <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 px-2 xl:px-0">
           {tier
             .map(
@@ -123,9 +123,9 @@ export default function PricingSection() {
                   viewport={{ once: true }}
                 >
                   <div className="text-white bg-black text-center py-5 ">
-                    <h4 className="font-semibold text-2xl montserrat ">
+                    <h3 className="font-semibold text-2xl montserrat ">
                       {plan}
-                    </h4>
+                    </h3>
                   </div>
                   <div className="py-10 px-5">
                     <ul className="flex flex-col gap-3 min-h-52">
@@ -163,7 +163,7 @@ export default function PricingSection() {
                       <span className=" text-gray-400 line-through italic ">
                         ${price + discountPrice}
                       </span>
-                      <span className="bg-gray-200 text-black px-4 py-1  text-xs rounded-full font-semibold">
+                      <span className="bg-red-500 text-white px-4 py-1  text-xs rounded-full font-semibold">
                         ${discountPrice} OFF
                       </span>
                     </div>

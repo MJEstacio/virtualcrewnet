@@ -23,9 +23,11 @@ const ContactPage = () => {
         </div>
         <div className="border border-black mt-10 max-w-7xl mx-auto"></div>
         <div className="max-w-7xl mx-auto my-10">
-          <div className="mb-10">
-            <h2 className="text-4xl">Our Office</h2>
-            <p>1303, US 127 South, Suite 104 #1002, Frankfurt, KY 40601</p>
+          <div className="mb-5 text-center">
+            <h2 className="text-4xl ">Our Office</h2>
+            <p className="text-gray-500">
+              1303, US 127 South, Suite 104 #1002, Frankfurt, KY 40601
+            </p>
           </div>
           <iframe
             className="p-2 rounded-md bg-red-500"
