@@ -73,7 +73,7 @@ const HomeFAQ = () => {
             <div className="content ">
               <p className="text-brand-1/75 p-5 bg-white">
                 We accept bank or wire transfer to our bank account and fund
-                transfer through PayPal.
+                transfer through Stripe.
               </p>
             </div>
           </li>
