@@ -47,7 +47,7 @@ const socialIcons = [
 const Footer = () => {
   let year = new Date().getFullYear();
   return (
-    <footer className="bg-black text-white pt-10">
+    <footer className="bg-black text-white pt-10 pb-5">
       <div className="max-w-7xl mx-auto flex items-center justify-between flex-col md:flex-row px-2">
         <div>
           <Link href={"/"}>
