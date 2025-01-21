@@ -1,38 +1,7 @@
-<!--Use the below code snippet to provide real time updates to the live chat plugin without the need of copying and paste each time to your website when changes are made via PBX-->
-<call-us-selector phonesystem-url="https://1287.3cx.cloud" party="na"></call-us-selector>
-<!--Incase you don't want real time updates to the live chat plugin when options are changed, use the below code snippet. Please note that each time you change the settings you will need to copy and paste the snippet code to your website-->
-<!--<call-us 
-phonesystem-url="https://1287.3cx.cloud" 
-style="position:fixed;font-size:16px;line-height:17px;z-index: 99999;--call-us-main-accent-color:#3397D4;--call-us-main-background-color:#FFFFFF;--call-us-plate-background-color:#373737;--call-us-plate-font-color:#E6E6E6;--call-us-main-font-color:#000000;--call-us-agent-bubble-color:#00000010;right: 20px; bottom: 20px;" 
-id="wp-live-chat-by-3CX" 
-minimized="true" 
-animation-style="slideup" 
-party="na" 
-minimized-style="bubbleright" 
-allow-call="false" 
-allow-video="false" 
-allow-soundnotifications="true" 
-enable-mute="true" 
-enable-onmobile="true" 
-offline-enabled="true" 
-enable="true" 
-ignore-queueownership="false" 
-authentication="none" 
-operator-name="Virtual Crew Staff" 
-show-operator-actual-name="true" 
-aknowledge-received="true" 
-operator-icon="data:image/png;base64,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" 
-gdpr-enabled="false" 
-message-userinfo-format="avatar" 
-message-dateformat="both" 
-lang="browser" 
-button-icon-type="default" 
-greeting-visibility="both" 
-greeting-offline-visibility="none" 
-greeting-message="Hello, Islay Rodriguez here. I would love to answer any questions you have." 
-chat-delay="2000" 
-enable-direct-call="false" 
-enable-ga="false" 
-></call-us>-->
-<script defer src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js"
-  id="tcx-callus-js" charset="utf-8"></script>
+<!-- <div data-chat-widget data-widget-id="678f03c21b88777fd0648cb0"
+  data-location-id="AA0pbIEdubRuOegay7Rq">
+</div>
+<script src="https://widgets.leadconnectorhq.com/loader.js"
+  data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+  data-widget-id="678f03c21b88777fd0648cb0">
+  </script> -->

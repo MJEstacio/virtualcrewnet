@@ -7,6 +7,7 @@ import { Toaster } from "react-hot-toast";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import LiveChat from "@/components/LiveChat";
+import LiveChatv2 from "@/components/LiveChatv2";
 
 //   subsets: ["latin"],
 //   variable: "--font-montserrat",
@@ -42,7 +43,14 @@ export default function RootLayout({
         {children}
         <Footer />
         <SpeedInsights />
-        <LiveChat />
+        {/* <LiveChat /> */}
+
+        {/* <LiveChatv2 /> */}
+        <script
+          src="https://widgets.leadconnectorhq.com/loader.js"
+          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+          data-widget-id="678f03c21b88777fd0648cb0"
+        ></script>
       </body>
     </html>
   );
