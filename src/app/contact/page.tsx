@@ -37,26 +37,25 @@ const ContactPage = () => {
             height="450"
             loading="lazy"
           ></iframe>
-
-          <iframe
-            className="w-full h-full border-none rounded"
-            src="https://api.leadconnectorhq.com/widget/form/CIDk4B1gkrOrnA0K7FV5"
-            id="inline-CIDk4B1gkrOrnA0K7FV5"
-            data-layout="{'id':'INLINE'}"
-            data-trigger-type="alwaysShow"
-            data-trigger-value=""
-            data-activation-type="alwaysActivated"
-            data-activation-value=""
-            data-deactivation-type="neverDeactivate"
-            data-deactivation-value=""
-            data-form-name="Contact Us"
-            data-height="535"
-            data-layout-iframe-id="inline-CIDk4B1gkrOrnA0K7FV5"
-            data-form-id="CIDk4B1gkrOrnA0K7FV5"
-            title="Contact Us"
-          ></iframe>
-          <Script src="https://link.msgsndr.com/js/form_embed.js" />
         </div>
+        <iframe
+          className="w-full h-full border-none rounded text-white"
+          src="https://api.leadconnectorhq.com/widget/form/CIDk4B1gkrOrnA0K7FV5"
+          id="inline-CIDk4B1gkrOrnA0K7FV5"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="Contact Us"
+          data-height="535"
+          data-layout-iframe-id="inline-CIDk4B1gkrOrnA0K7FV5"
+          data-form-id="CIDk4B1gkrOrnA0K7FV5"
+          title="Contact Us"
+        ></iframe>
+        <Script src="https://link.msgsndr.com/js/form_embed.js" />
       </section>
     </main>
   );
