@@ -1,6 +1,7 @@
 // import ContactForm from "@/components/ContactForm";
 import { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
 export const metadata: Metadata = {
   title: "Contact - VirtualCrew",
 };
@@ -54,7 +55,7 @@ const ContactPage = () => {
             data-form-id="CIDk4B1gkrOrnA0K7FV5"
             title="Contact Us"
           ></iframe>
-          <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+          <Script src="https://link.msgsndr.com/js/form_embed.js" />
         </div>
       </section>
     </main>
