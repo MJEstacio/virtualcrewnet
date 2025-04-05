@@ -3,6 +3,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer utilities {
+  .animate-flip-up {
+    transform: rotateX(90deg);
+  }
+}
 
 .roboto {
   font-family: "Roboto", sans-serif;

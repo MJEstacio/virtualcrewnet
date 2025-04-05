@@ -26,10 +26,7 @@ const HeroHome = () => {
   }, []);
   return (
     <section className="bg-gray-50 ">
-      <div>
-        <Toaster position="top-center" />
-      </div>
-      <div className="max-w-7xl mx-auto grid py-10 min-h-screen flex flex-col items-center gap-5">
+      <div className="max-w-7xl mx-auto py-10 min-h-screen flex flex-col items-center gap-5">
         <div className="flex justify-center items-center flex-col  mt-36 mb-5">
           <h1 className=" text-3xl font-semibold text-center">
             Welcome to VirtualCrew.Net
@@ -59,7 +56,7 @@ const HeroHome = () => {
             {muted ? "Click to enable sound" : "Click to mute sound"}
           </button>
         </div>
-        <div>{/* <ContactForm /> */}</div>
+        {/* <div><ContactForm /></div> */}
         {/* <div className="">
           <div>
             <p className="text-xl uppercase">Lorem ipsum dolor sit amet.</p>

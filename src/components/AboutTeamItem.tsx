@@ -19,14 +19,14 @@ const AboutTeamItem = ({ member }: any) => {
         alt={member.name}
         width={500}
         height={500}
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover tex"
       />
       <div className="border-t-2 py-4 px-2 bg-slate-100 text-center">
         <h3 className=" font-semibold montserrat">{member.name}</h3>
         <h4 className="text-sm italic">{member.role}</h4>
         <div className="mt-5 mb-2">
           <button
-            className="bg-black text-white py-2 px-5 hover:ring-2 hover:ring-black hover:bg-white hover:text-black duration-300 font-semibold"
+            className="bg-black text-white py-2 px-5 hover:ring-2 hover:ring-black hover:bg-white hover:text-black duration-300 font-semibold "
             onClick={handleClick}
           >
             View Info

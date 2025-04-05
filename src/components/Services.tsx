@@ -14,7 +14,7 @@ const services = [
     icon: (
       <GrChatOption
         size={40}
-        className="text-slate-800 my-5 mx-auto"
+        className="text-slate-800 my-5 mx-auto  "
       />
     ),
     title: "Administrative Support",
